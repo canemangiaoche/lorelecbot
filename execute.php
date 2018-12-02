@@ -31,7 +31,7 @@ elseif($text=="/TEMPESTADIMATTONELLE")
 }
 elseif($text=="/kio")
 {
-	$x = random_int(0, 7);
+	$x = random_int(0, 8);
 	if ($x == 0)
 	{
 		$response = "Statt accort ca mammt staser a truov muort all anm e kitamuort a te e chella cess e mammt stu scem e merd";
@@ -63,6 +63,10 @@ elseif($text=="/kio")
 	elseif ($x == 7)
 	{
 		$response = "Cazz rid vafammocc t jett la munnezz appress";
+	}
+	elseif ($x == 8)
+	{
+		$response = "cazz vuo";
 	}
 }
 elseif($text=="/kia")
@@ -169,7 +173,7 @@ PORCO DIO NON SONO UNA SERVA E NON MI PAGHI HO SETTEMILA COSE MIGLIORI DA FARE C
 	}
 	elseif ($x == 19)
 	{
-		$response = "Ti coddiri❤️🐴
+		$response = "Ti coddiri
 
 
 
@@ -197,7 +201,7 @@ Miope
 	}
 	elseif ($x == 23)
 	{
-		$response = "Ti avevo detto che hai le boobies😂❤️ così impari a rubarmele";
+		$response = "Ti avevo detto che hai le boobies così impari a rubarmele";
 	}
 	elseif ($x == 24)
 	{
@@ -206,7 +210,11 @@ Miope
 2) non sono italiana
 3) mio padre è morto";
 	}
-}	
+}
+elseif( strpos(strtolower($text), "lorebot") )
+{
+	$response = "cazzo vuoi";
+}
 /*else
 {
 	$response = "sto comando nn esiste cogl****e";
