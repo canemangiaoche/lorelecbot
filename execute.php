@@ -26,7 +26,7 @@ elseif($text=="/stocazzo")
 {
 	$response = "stocazzo";
 }
-elseif($text=="/TEMPESTADIMATTONELLE")
+elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
 }
