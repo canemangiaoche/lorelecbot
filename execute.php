@@ -19,11 +19,11 @@ header("Content-Type: application/json");
 $response = '';
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
-	$response = "Ciao $firstname, benvenuto!";
+	$response = "Preparati a soffrire, $firstname!";
 }
-elseif($text=="domanda 1")
+elseif($text=="/stocazzo")
 {
-	$response = "risposta 1";
+	$response = "stocazzo";
 }
 elseif($text=="domanda 2")
 {
@@ -31,7 +31,7 @@ elseif($text=="domanda 2")
 }
 else
 {
-	$response = "Comando non valido!";
+	$response = "sto comando nn esiste cogl****e";
 }
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
