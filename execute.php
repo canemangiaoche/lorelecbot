@@ -17,6 +17,7 @@ $text = trim($text);
 $text = strtolower($text);
 header("Content-Type: application/json");
 $response = '';
+$lorebot = 'lorebot';
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Preparati a soffrire, $firstname!";
@@ -211,7 +212,7 @@ Miope
 3) mio padre è morto";
 	}
 }
-elseif( strpos(strtolower($text), "lorebot") == true )
+elseif( strpos(strtolower($text), $lorebot) == true )
 {
 	$response = "cazzo vuoi";
 }
