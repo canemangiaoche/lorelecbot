@@ -211,7 +211,7 @@ Miope
 3) mio padre è morto";
 	}
 }
-elseif( strpos(strtolower($text), "lorebot") )
+elseif( strpos(strtolower($text), "lorebot") == true )
 {
 	$response = "cazzo vuoi";
 }
