@@ -212,9 +212,49 @@ Miope
 3) mio padre è morto";
 	}
 }
-elseif( strpos(strtolower($text), $lorebot) !== false )
+elseif( strpos(strtolower($text), $lorebot) === true )
 {
-	$response = "cazzo vuoi";
+	$x = random_int(0, 9);
+	if ($x == 0)
+	{
+		$response = "cazzo vuoi";
+	}
+	elseif ($x == 1)
+	{
+		$response = "si sono proprio io";
+	}
+	elseif ($x == 2)
+	{
+		$response = "in canne e fossa";
+	}
+	elseif ($x == 3)
+	{
+		$response = "nominami di nuovo e finisce bene";
+	}
+	elseif ($x == 4)
+	{
+		$response = "tuna, attacca!";
+	}
+	elseif ($x == 5)
+	{
+		$response = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	}
+	elseif ($x == 6)
+	{
+		$response = "stasera sta busta di piscio di $firstname paga da bere a tutti";
+	}
+	elseif ($x == 7)
+	{
+		$response = "Boris, obliteralo!";
+	}
+	elseif ($x == 8)
+	{
+		$response = "dio paride";
+	}
+	elseif ($x == 9)
+	{
+		$response = "We @$username";
+	}
 }
 /*else
 {
