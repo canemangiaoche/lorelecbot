@@ -206,6 +206,7 @@ Miope
 2) non sono italiana
 3) mio padre è morto";
 	}
+}	
 /*else
 {
 	$response = "sto comando nn esiste cogl****e";
