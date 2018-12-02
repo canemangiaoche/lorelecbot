@@ -25,9 +25,37 @@ elseif($text=="/stocazzo")
 {
 	$response = "stocazzo";
 }
-elseif($text=="domanda 2")
+elseif($text=="/TEMPESTADIMATTONELLE")
 {
-	$response = "risposta 2";
+	$response = "/TEMPESTADIMATTONELLE";
+}
+elseif($text=="/dado")
+{
+	$x = random_int(0, 5);
+	if ($x == 0)
+	{
+		$response = "1";
+	}
+	elseif ($x == 1)
+	{
+		$response = "2";
+	}
+	elseif ($x == 2)
+	{
+		$response = "3";
+	}
+	elseif ($x == 3)
+	{
+		$response = "4";
+	}
+	elseif ($x == 4)
+	{
+		$response = "5";
+	}
+	elseif ($x == 5)
+	{
+		$response = "6";
+	}
 }
 else
 {
