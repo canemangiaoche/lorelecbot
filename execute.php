@@ -125,6 +125,10 @@ elseif( strpos(strtolower($text), "aaaa") !== false )
 {
    $response = "AAAAAAAAAAAAAAAAAAAAAA";
 }
+elseif( strpos(strtolower($text), $domanda) !== false && substr("abcdef", -1) === “?”)
+{
+   $response = "Mi fa schifo al cazzo";
+}
 elseif(strpos($text, "/kio") === 0)
 {
 	$x = random_int(0, 8);
