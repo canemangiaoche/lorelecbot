@@ -125,6 +125,13 @@ elseif( strpos(strtolower($text), "aaaa") !== false )
 {
    $response = "AAAAAAAAAAAAAAAAAAAAAA";
 }
+elseif( strpos(strtolower($text), "/fusione") !== false )
+{
+   $double = explode("/", $text);
+   $len0 = (strlen($double[0]) / 2);
+   $len1 = (strlen($double[1]) / 2);
+   $response = substr($double[0], $len0).substr($double[1], -$len1)
+};
 elseif( strpos(strtolower($text), $domanda) !== false && substr($text, -1) === '?')
 {
    $response = "Mi fa schifo al cazzo";
