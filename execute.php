@@ -22,9 +22,71 @@ $response = '';
 $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
+$lore = array(
+"STRONZO SONO UN NEGRO NINJA",
+ "LA TIGRE DEL FAR WEB CHE GIOCA A NORELECBOT, POMPA LA LORE CHE C’È DORK QUARANTATRÈSEDICICICICI",
+ "AFFERMAZIONE SENZA TEMPO INDICANTE QUESTO PRECISO MOMENTO!",
+ "Dobbiamo rapire uno sceicco",
+ "QUESTA È BENZINA, E IO MI DO FUOCO",
+ "NEL NOME DELLA SAVANA IO TI RENATURIZZO",
+ "È FINITA, ADDIO PER SEMPRE! COLPO FURTO DI PORCO!",
+ "GELATERIA NOTTURNA, A ME!",
+ "San TiKio Sovraesposto, difendici nella lotta:
+sii il nostro aiuto con la malvagità e le insidie del demonio.
+Supplichevoli preghiamo che Kio lo domini e Tu,
+Principe della Milizia Cosmica, con il potere che ti viene da Kio,
+incatena nell’inferno gli sbirrinfami e gli spiriti benigni,
+che si aggirano per il mondo per guardare gli animerda. USE.",
+"Qualcosa mi dice che la triforchetta ce l’ha proprio il TiKio Future Cultist",
+"10, [04.04.18 20:01]
+Sei mai stato in quello dell’universo 71.costa d’avorio? Una volta sono andato lì e per sbaglio ho premuto sull’insalata, il giorno prima mi sono risvegliato con la barba al contrario",
+"Qualcuno deve aver giocato con le demo di sky tv sbagliate",
+"Dev’essere tutto un complotto di Matteo Montesi Forma Ananas",
+"KIOKEEEEEEN TRICOLOREEEEE FORZA 100.520.453,cagliariiiiii",
+"E ALL’IMPROVVISO ARRIVO IO",
+"PALLA DI SBORRA INFUOCATA OCULARE!",
+"LA CIPULLATE GRAFICA!",
+"Hai mai provato a partorire nello spazio? Ecco, non farlo",
+"Siamo gli errori che nessuno merita ma di cui tutti hanno bisogno",
+"Muoviti a parcheggiare che devo sublimare in fretta",
+"Barbra Streisand, uno dei maggiori esponenti della kiomorra",
+"Ma il nostro vero Dork è positivo e femmina, lo hanno fatto con uno stampo per biscotti",
+"Dobbiamo scavare un tunnel con utensili fatti interamente di ghiaccioli",
+"Cambia forma paride, ora ci serve un frigorifero",
+"Stiamo sbucando sotto la capanna xp, preparatevi a riceverne tanta",
+"Ho esagerato col tritolo di ammonio ammonito",
+"PRENDIAMO IL CONTROLLO DI QUESTA FATTORIA",
+"Ormai fluttuo da tipico signore dei vampiri all’acqua pazza",
+"Ah già che a secondigliano il tempo trascorre in ritagli di giornale",
+"Prendi una camera PõP",
+"Mica è colpa mia se ci mettono sopra i tovaglioli con scritto USE ME in uu i o y r",
+"NON FARE UN ALTRO QUICKSAVE CHE TI AMMAZZO",
+"che strano, mi pareva di avere percepito la sborra di X primario da queste parti",
+"Per ucciderlo bisognerebbe sparargli ai coglioni",
+"Dev’essere trafitto da un proiettile di un Nerf ‘n Strike Èlite",
+"Joker, [16.04.18 01:02]
+Da quando si è unito Giul non fa più ridere
+Boris, [16.04.18 01:02]
+Lo stiamo ammazzando per questo
+",
+"Oggi è Lunedì!",
+"Boris basta parlare coi morti in hmmmm",
+"Valentino Flegyas, [04.05.18 00:29]
+Ma cos'è 'sta lore di cui parlate?",
+"Xio Festa",
+"/Autolavaggio",
+"
+Xio, Xio
+Addio.",
+"XIO BULLO VUOLE COMBATTERE!"
+);
 if(strpos($text, "/start") === 0)
 {
 	$response = "Preparati a soffrire, $firstname!";
+}
+if(strpos($text, "/lore") === 0)
+{
+	$response = array_rand($lore);
 }
 /*if(strpos($text, "/scrivente") === 0)
 {
