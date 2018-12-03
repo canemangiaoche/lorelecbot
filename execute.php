@@ -7,6 +7,8 @@ if(!$update)
 }
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
+$scrivente = isset($message['from']) ? $message['from'] : "";
+$link = isset($message['invite_link']) ? $message['invite_link'] : "";
 $chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
 $firstname = isset($message['chat']['first_name']) ? $message['chat']['first_name'] : "";
 $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name'] : "";
@@ -23,6 +25,21 @@ $uccidi = 'lorebot uccidi';
 if(strpos($text, "/start") === 0)
 {
 	$response = "Preparati a soffrire, $firstname!";
+}
+if(strpos($text, "/scrivente") === 0)
+{
+	$response = "$scrivente";
+}
+if(strpos($text, "/link") === 0)
+{
+	if (isset($link)
+	{
+	$response = "Link Regno: $link";
+	}
+	else
+	{
+	$response = "Fai troppo schifo per richiedere il link";
+	}
 }
 elseif(strpos($text, "/stocazzo") === 0)
 {
@@ -102,9 +119,6 @@ elseif(strpos($text, "/kia") === 0)
 	elseif ($x == 3)
 	{
 		$response = "Hai assaggiato il tuo sperma? 
-
-
-
 A me fuori fa schifo per la consistenza. Se si lava il sapore non è un problema";
 	}
 	elseif ($x == 4)
@@ -139,9 +153,6 @@ Prof: eh il modo di incontrarsi si trova... E a Villasor?
 Io: Sì li ho, cioè li avevo. Ho litigato con una persona e sono tutti dalla sua... Cioè, non ho proprio litigato... 
 Prof: oppure potresti restare a Cagliari con i tuoi amici per la notte? 
 Io: *ride forte* mia madre non mi lascia stare a Cagliari, ho chiesto più volte
-
-
-
 I PROF CHE SI FANNO GLI AFFARI TUOI";
 	}
 	elseif ($x == 10)
@@ -175,11 +186,6 @@ I PROF CHE SI FANNO GLI AFFARI TUOI";
 	elseif ($x == 17)
 	{
 		$response = "Sta gran zoccola mi fa passare da stronza perché lei è handicappata e io anziché fare la cenerentolina di merda pulendo dove sporca e parlando con i pettirossi mi faccio i maledetti cazzi miei e se ho voglia studio
-
-
-
-
-
 PORCO DIO NON SONO UNA SERVA E NON MI PAGHI HO SETTEMILA COSE MIGLIORI DA FARE CHE PULIRE LA TUA MERDA";
 	}
 	elseif ($x == 18)
@@ -189,15 +195,11 @@ PORCO DIO NON SONO UNA SERVA E NON MI PAGHI HO SETTEMILA COSE MIGLIORI DA FARE C
 	elseif ($x == 19)
 	{
 		$response = "Ti coddiri
-
-
-
 (Forma apotropaica in sardo, che letteralmente si traduce con ciò-che-fece-cicciolina-con-un-cavallo)";
 	}
 	elseif ($x == 20)
 	{
 		$response = "Io avevo un nonno mozzarellino con gli occhi verdi e i capelli rossi (era del nord Italia) che ha sposato una sarda tra le più negre😂 mio padre ha preso da lei, ma mio fratello è la copia di jon snow e io sono negra😂
-
 Mentre i genitori di mamma avevano entrambi gli occhi scuri e lo stesso tutti e quattro i figli, ma i figli dei maschi hanno gli occhi chiari (verdi o grigi) e noi figli delle femmine li abbiamo scuri(mio fratello jonsnò non è figlio di mamma)";
 	}
 	elseif ($x == 21)
@@ -207,11 +209,8 @@ Mentre i genitori di mamma avevano entrambi gli occhi scuri e lo stesso tutti e 
 	elseif ($x == 22)
 	{
 		$response = "Raga
-
 Sono ufficialmente una quattrocchi
-
 Miope
-
 -1 a destra e -0.75 a sinistra. Evviva";
 	}
 	elseif ($x == 23)
