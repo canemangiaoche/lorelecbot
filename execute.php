@@ -19,19 +19,19 @@ header("Content-Type: application/json");
 $response = '';
 $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
-if(strpos($text, "/start") === 0 || $text=="/start@LorelecBot")
+if(strpos($text, "/start") === 0)
 {
 	$response = "Preparati a soffrire, $firstname!";
 }
-elseif($text=="/stocazzo" || $text=="/stocazzo@LorelecBot")
+elseif(strpos($text, "/stocazzo") === 0)
 {
 	$response = "stocazzo";
 }
-elseif(strtolower($text) == "/tempestadimattonelle" || strtolower($text) == "/tempestadimattonelle@LorelecBot")
+elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
 }
-elseif($text=="/kio" || $text=="/kio@LorelecBot")
+elseif(strpos($text, "/kio") === 0)
 {
 	$x = random_int(0, 8);
 	if ($x == 0)
@@ -71,7 +71,7 @@ elseif($text=="/kio" || $text=="/kio@LorelecBot")
 		$response = "cazz vuo";
 	}
 }
-elseif($text=="/kia" || $text=="/kia@LorelecBot")
+elseif(strpos($text, "/kia") === 0)
 {
 	$x = random_int(0, 24);
 	if ($x == 0)
