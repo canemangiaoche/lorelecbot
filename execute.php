@@ -237,7 +237,7 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	}
 	elseif ($x == 4)
 	{
-		$response = "tuna, attacca!";
+		$response = "$vittima, preparati a soffrire! KIOKEN TRICOLORE!";
 	}
 	elseif ($x == 5)
 	{
@@ -245,19 +245,19 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	}
 	elseif ($x == 6)
 	{
-		$response = "stasera sta busta di piscio paga da bere a tutti";
+		$response = "$vittima, preparati a morire! SBORRATA TEMPORALE!";
 	}
 	elseif ($x == 7)
 	{
-		$response = "Boris, obliteralo!";
+		$response = "$vittima, la Kiomorra ti saluta! PUGNO!";
 	}
 	elseif ($x == 8)
 	{
-		$response = "dio paride";
+		$response = "forse non dovremmo ucciderlo, forse dovremmo farlo entrare nella Lore";
 	}
 	elseif ($x == 9)
 	{
-		$response = "fine attacchi";
+		$response = "aspe che mi sparo un po' di olio di motore nel corpo";
 	}
 	}
 	else {
