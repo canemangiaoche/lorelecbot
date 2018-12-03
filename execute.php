@@ -8,7 +8,7 @@ if(!$update)
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
 $scrivente = isset($message['from']) ? $message['from'] : "";
-$link = isset($message['invite_link']) ? $message['invite_link'] : "";
+$link = Request::exportChatInviteLink(['chat_id' => $chat_id]);
 $chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
 $firstname = isset($message['chat']['first_name']) ? $message['chat']['first_name'] : "";
 $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name'] : "";
