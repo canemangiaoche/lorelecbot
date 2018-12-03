@@ -227,7 +227,7 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	if( strpos(strtolower($text), $attacca) !== false || strpos(strtolower($text), $uccidi) !== false)
 	{
 		$x = random_int(0, 9);
-		$vittima = substr($text, 15);  
+		$vittima = ucfirst(substr($text, 15));  
 	if ($x == 0)
 	{
 		$response = "$vittima, preparati a morire! CANNONE COTOLETTA!";
