@@ -18,19 +18,20 @@ $text = strtolower($text);
 header("Content-Type: application/json");
 $response = '';
 $lorebot = 'lorebot';
-if(strpos($text, "/start") === 0 || $text=="ciao")
+$attacca = 'lorebot attacca';
+if(strpos($text, "/start") === 0 || $text=="/start@LorelecBot")
 {
 	$response = "Preparati a soffrire, $firstname!";
 }
-elseif($text=="/stocazzo")
+elseif($text=="/stocazzo" || $text=="/stocazzo@LorelecBot")
 {
 	$response = "stocazzo";
 }
-elseif(strtolower($text) == "/tempestadimattonelle")
+elseif(strtolower($text) == "/tempestadimattonelle" || strtolower($text) == "/tempestadimattonelle@LorelecBot")
 {
 	$response = "/TEMPESTADIMATTONELLE";
 }
-elseif($text=="/kio")
+elseif($text=="/kio" || $text=="/kio@LorelecBot")
 {
 	$x = random_int(0, 8);
 	if ($x == 0)
@@ -70,7 +71,7 @@ elseif($text=="/kio")
 		$response = "cazz vuo";
 	}
 }
-elseif($text=="/kia")
+elseif($text=="/kia" $text=="/kia@LorelecBot")
 {
 	$x = random_int(0, 24);
 	if ($x == 0)
@@ -214,6 +215,52 @@ Miope
 }
 elseif( strpos(strtolower($text), $lorebot) !== false )
 {
+	if( strpos(strtolower($text), $attacca) !== false )
+	{
+		$x = random_int(0, 9);
+		$vittima = substr($text, 15);  
+	if ($x == 0)
+	{
+		$response = "$vittima, preparati a morire! CANNONE COTOLETTA!";
+	}
+	elseif ($x == 1)
+	{
+		$response = "$vittima, preparati a morire! FRONTE LUMINOSAAAAAAAAAAAAAAA";
+	}
+	elseif ($x == 2)
+	{
+		$response = "$vittima, preparati a morire! COLPO FURTO DI PORCO!";
+	}
+	elseif ($x == 3)
+	{
+		$response = "non ho voglia";
+	}
+	elseif ($x == 4)
+	{
+		$response = "tuna, attacca!";
+	}
+	elseif ($x == 5)
+	{
+		$response = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	}
+	elseif ($x == 6)
+	{
+		$response = "stasera sta busta di piscio paga da bere a tutti";
+	}
+	elseif ($x == 7)
+	{
+		$response = "Boris, obliteralo!";
+	}
+	elseif ($x == 8)
+	{
+		$response = "dio paride";
+	}
+	elseif ($x == 9)
+	{
+		$response = "fine attacchi";
+	}
+	}
+	else {
 	$x = random_int(0, 9);
 	if ($x == 0)
 	{
@@ -253,7 +300,8 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	}
 	elseif ($x == 9)
 	{
-		$response = "We @$username";
+		$response = "We $username";
+	}
 	}
 }
 /*else
