@@ -42,7 +42,7 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 }
 elseif( strpos(strtolower($text), "aaaa") !== false )
 {
-   $response = "AAAAAAAAAAAAAAAAAAAAAAAAAAA";
+   $response = "AAAAAAAAAAAAAAAAAAAAAA";
 }
 elseif(strpos($text, "/kio") === 0)
 {
