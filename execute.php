@@ -19,6 +19,7 @@ header("Content-Type: application/json");
 $response = '';
 $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
+$uccidi = 'lorebot uccidi';
 if(strpos($text, "/start") === 0)
 {
 	$response = "Preparati a soffrire, $firstname!";
@@ -223,7 +224,7 @@ Miope
 }
 elseif( strpos(strtolower($text), $lorebot) !== false )
 {
-	if( strpos(strtolower($text), $attacca) !== false )
+	if( strpos(strtolower($text), $attacca) !== false || strpos(strtolower($text), $uccidi) !== false)
 	{
 		$x = random_int(0, 9);
 		$vittima = substr($text, 15);  
