@@ -32,7 +32,7 @@ if(strpos($text, "/scrivente") === 0)
 }
 if(strpos($text, "/link") === 0)
 {
-	if (isset($link)
+	if (isset($link))
 	{
 	$response = "Link Regno: $link";
 	}
