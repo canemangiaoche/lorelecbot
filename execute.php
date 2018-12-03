@@ -87,7 +87,7 @@ if(strpos($text, "/start") === 0)
 if(strpos($text, "/lore") === 0)
 {
 	$abc = array_rand($lore);
-	$response = $abc[0];
+	$response = $lore[$abc[0]];
 }
 /*if(strpos($text, "/scrivente") === 0)
 {
