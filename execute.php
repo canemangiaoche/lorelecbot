@@ -40,6 +40,10 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
 }
+elseif( strpos(strtolower($text), "aaaa") !== false )
+{
+   $response = "AAAAAAAAAAAAAAAAAAAAAAAAAAA";
+}
 elseif(strpos($text, "/kio") === 0)
 {
 	$x = random_int(0, 8);
