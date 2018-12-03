@@ -125,7 +125,7 @@ elseif( strpos(strtolower($text), "aaaa") !== false )
 {
    $response = "AAAAAAAAAAAAAAAAAAAAAA";
 }
-elseif( strpos(strtolower($text), $domanda) !== false && substr("abcdef", -1) === “?”)
+elseif( strpos(strtolower($text, $domanda) !== false && substr($text, -1) === “?”)
 {
    $response = "Mi fa schifo al cazzo";
 }
