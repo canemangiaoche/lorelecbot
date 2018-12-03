@@ -71,7 +71,7 @@ elseif($text=="/kio" || $text=="/kio@LorelecBot")
 		$response = "cazz vuo";
 	}
 }
-elseif($text=="/kia" $text=="/kia@LorelecBot")
+elseif($text=="/kia" || $text=="/kia@LorelecBot")
 {
 	$x = random_int(0, 24);
 	if ($x == 0)
