@@ -31,6 +31,10 @@ elseif(strpos($text, "/use") === 0)
 {
 	$response = "USE";
 }
+elseif(strpos($text, "/mfnb") === 0)
+{
+	$response = "MFNB";
+}
 elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
