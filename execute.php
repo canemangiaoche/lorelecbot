@@ -19,6 +19,7 @@ $text = trim($text);
 $text = strtolower($text);
 header("Content-Type: application/json");
 $response = '';
+$sticker_id="CAADAgADqAIAAkcVaAllGKpjZDCAgQI";
 $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
@@ -116,6 +117,10 @@ elseif(strpos($text, "/use") === 0)
 elseif(strpos($text, "/mfnb") === 0)
 {
 	$response = "MFNB";
+}
+elseif(strpos($text, "/buongiorno") === 0)
+{
+	$response = file_get_contents('https://api.telegram.org/bot'.$bot_token.'/sendSticker?chat_id='.$user_id.'&sticker='.$file_id);
 }
 elseif(strtolower($text) == "/tempestadimattonelle")
 {
