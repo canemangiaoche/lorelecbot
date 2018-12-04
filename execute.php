@@ -603,11 +603,39 @@ elseif(strpos($text, "/sturla") === 0)
 }
 elseif( strpos(strtolower($text), "aaaa") !== false )
 {
+	$x = random_int(0, 5);
+	if ($x == 0)
+	{
    $response = "AAAAAAAAAAAAAAAAAAAAAA";
+	}
+	if ($x == 1)
+	{
+   $response = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	}
+	if ($x == 2)
+	{
+   $response = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	}
+	if ($x == 3)
+	{
+   $response = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	}
+	if ($x == 4)
+	{
+   $response = "AAAAAAAAAAAAAAAAA";
+	}
+	if ($x == 5)
+	{
+   $response = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	}
 }
 elseif( strpos(strtolower($text), "mammt") !== false )
 {
    $response = "mammt";
+}
+elseif( strpos(strtolower($text), "tuna") !== false )
+{
+   $response = "oh non mi nominare quel vigliacco che oggi sono di buonumore";
 }
 elseif( strpos(strtolower($text), "/fusione") !== false )
 {
@@ -846,7 +874,7 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	{
 		$response = "$vittima, la Kiomorra ti saluta! PUGNO!";
 	}
-	elseif ($x == 8)
+	elseif ($x == 8 && $vittima !== "Giul")
 	{
 		$response = "forse non dovremmo ucciderlo, forse dovremmo farlo entrare nella Lore";
 	}
