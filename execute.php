@@ -19,7 +19,7 @@ $text = trim($text);
 $text = strtolower($text);
 header("Content-Type: application/json");
 $response = '';
-$sticker_id="CAADAgADqAIAAkcVaAllGKpjZDCAgQI";
+$sticker_id="CAADBAADZgEAApD3ZAYdxLS3pXN-cAI";
 $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
