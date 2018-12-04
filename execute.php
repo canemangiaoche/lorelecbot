@@ -81,6 +81,8 @@ Lo stiamo ammazzando per questo
 Ma cos'è 'sta lore di cui parlate?",
 "Xio Festa",
 "/Autolavaggio",
+"OBLITERANDO",
+"GIUL È UNA DELLE DUE PALLE",
 "
 Xio, Xio
 Addio.",
