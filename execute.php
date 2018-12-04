@@ -136,7 +136,8 @@ elseif( strpos(strtolower($text), "/fusione") !== false )
 }
  elseif ($len1%2 > 0 && $len0%2 == 0)
    {
-   $response = ucfirst(substr($double[0], 0, $len0+1).substr($double[1], $len1));
+   $len0 = $len0 - 1;
+   $response = ucfirst(substr($double[0], 0, $len0).substr($double[1], $len1));
 }
    else {
    $response = "Sintassi: /fusione nome1/nome2";
