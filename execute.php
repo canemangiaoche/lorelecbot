@@ -595,7 +595,7 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
 }
-elseif(strpos($text, "/sturla") )
+elseif(strpos($text, "/sturla") === 0)
 {
 	$response = "Innanzitutto mi presento... luca da alessandria... 28/11/1990... regista TV... nuoto...";
 }
@@ -793,7 +793,7 @@ Miope
 3) mio padre è morto";
 	}
 }
-elseif(strpos($text, "/tecnicismi"))
+elseif(strpos($text, "/tecnicismi") === 0)
 {
 	$response = "TECNICISMI SEGRETI
 	
