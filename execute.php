@@ -122,7 +122,7 @@ elseif(strpos($text, "/mfnb") === 0)
 }
 elseif(strpos($text, "/buongiorno") === 0)
 {
-	$response = file_get_contents('https://api.telegram.org/bot'.$bot_token.'/sendSticker?chat_id='.$user_id.'&sticker='.$file_id);
+	$response = file_get_contents('https://api.telegram.org/bot'.$bot_token.'/sendSticker?chat_id='.$chat_id.'&sticker='.$sticker_id);
 }
 elseif(strtolower($text) == "/tempestadimattonelle")
 {
