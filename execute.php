@@ -901,7 +901,7 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 }
 while(1)
 {
-	if($giorno == ("08:39:00")
+	if($giorno == ("21:47:00")
 	{
 		$response = "BUONGIORNO SOFTGUNNER";
 	}
