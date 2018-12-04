@@ -134,11 +134,10 @@ elseif( strpos(strtolower($text), "/fusione") !== false )
    {
    $response = ucfirst(substr($double[0], 0, $len0).substr($double[1], $len1));
 }
-   }
    else {
    $response = "Sintassi: /fusione nome1/nome2";
 }
-
+}
 elseif( strpos(strtolower($text), $domanda) !== false && substr($text, -1) === '?')
 {
    $response = "Mi fa schifo al cazzo";
