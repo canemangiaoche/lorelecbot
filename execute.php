@@ -599,19 +599,6 @@ elseif(strtolower($text) == "/sturla")
 {
 	$response = "Innanzitutto mi presento... luca da alessandria... 28/11/1990... regista TV... nuoto...";
 }
-elseif(strtolower($text) == "/tecnicismi")
-{
-	$response = "TECNICISMI SEGRETI
-	
-	Messaggi ottenibili con /autolavaggio: ".sizeof($autolavaggio)."
-	Messaggi ottenibili con /lore: ".sizeof($lore)."
-	Messaggi ottenibili con /copypasta: ".sizeof($copypasta)."
-	Messaggi ottenibili con /kia: 24
-	Messaggi ottenibili con /kio: 8
-	Uccisioni confermabili: 9
-	Interazioni LoreBot: 10
-	";
-}
 elseif( strpos(strtolower($text), "aaaa") !== false )
 {
    $response = "AAAAAAAAAAAAAAAAAAAAAA";
@@ -805,6 +792,19 @@ Miope
 2) non sono italiana
 3) mio padre è morto";
 	}
+}
+elseif(strtolower($text) == "/tecnicismi")
+{
+	$response = "TECNICISMI SEGRETI
+	
+	Messaggi ottenibili con /autolavaggio: ".sizeof($autolavaggio)."
+	Messaggi ottenibili con /lore: ".sizeof($lore)."
+	Messaggi ottenibili con /copypasta: ".sizeof($copypasta)."
+	Messaggi ottenibili con /kia: 24
+	Messaggi ottenibili con /kio: 8
+	Uccisioni confermabili: 9
+	Interazioni LoreBot: 10
+	";
 }
 elseif( strpos(strtolower($text), $lorebot) !== false )
 {
