@@ -905,7 +905,7 @@ while(1)
 	{
 		$response = "BUONGIORNO SOFTGUNNER";
 	}
-	sleep(60);
+	sleep(1);
 }
 /*else
 {
