@@ -130,7 +130,7 @@ elseif( strpos(strtolower($text), "/fusione") !== false )
    $double = explode("/", substr($text, 9));
    $len0 = (strlen($double[0]) / 2);
    $len1 = (strlen($double[1]) / 2);
-   $response = substr($double[0], 0, $len0).substr($double[1], $len1);
+   $response = ucfirst(substr($double[0], 0, $len0).substr($double[1], $len1));
 }
 elseif( strpos(strtolower($text), $domanda) !== false && substr($text, -1) === '?')
 {
