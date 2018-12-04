@@ -6,6 +6,8 @@ if(!$update)
   exit;
 }
 //require(“send-sticker.php”);
+date_default_timezone_set('GMT');
+$giorno = date("H:i:s");
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
 //$scrivente = isset($message['from']) ? $message['from'] : "";
@@ -877,7 +879,7 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	}
 	elseif ($x == 5)
 	{
-		$response = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+		$response = "Ti condanno a pregare sul pene capitale";
 	}
 	elseif ($x == 6)
 	{
@@ -896,6 +898,14 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 		$response = "We $username";
 	}
 	}
+}
+while(1)
+{
+	if($giorno == ("08:39:00")
+	{
+		$response = "BUONGIORNO SOFTGUNNER";
+	}
+	sleep(60);
 }
 /*else
 {
