@@ -595,7 +595,11 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
 }
-elseif(strtolower($text) == "/help")
+elseif(strtolower($text) == "/sturla")
+{
+	$response = "Innanzitutto mi presento... luca da alessandria... 28/11/1990... regista TV... nuoto...";
+}
+elseif(strtolower($text) == "/tecnicismi")
 {
 	$response = "TECNICISMI SEGRETI
 	
