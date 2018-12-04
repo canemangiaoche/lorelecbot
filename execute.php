@@ -5,7 +5,7 @@ if(!$update)
 {
   exit;
 }
-require(“send-sticker.php”);
+//require(“send-sticker.php”);
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
 //$scrivente = isset($message['from']) ? $message['from'] : "";
