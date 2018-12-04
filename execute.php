@@ -165,8 +165,8 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 elseif(strtolower($text) == "/help")
 {
 	$response = "TECNICISMI SEGRETI
-	Messaggi ottenibili con /autolavaggio: ".sizeof($autolavaggio).
-	"Messaggi ottenibili con /lore: ".sizeof($lore)."
+	Messaggi ottenibili con /autolavaggio: ".sizeof($autolavaggio)."
+	Messaggi ottenibili con /lore: ".sizeof($lore)."
 	Messaggi ottenibili con /kia: 24
 	Messaggi ottenibili con /kio: 8
 	Uccisioni confermabili: 9
