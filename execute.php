@@ -166,6 +166,10 @@ elseif( strpos(strtolower($text), "aaaa") !== false )
 {
    $response = "AAAAAAAAAAAAAAAAAAAAAA";
 }
+elseif( strpos(strtolower($text), "mammt") !== false )
+{
+   $response = "mammt";
+}
 elseif( strpos(strtolower($text), "/fusione") !== false )
 {
    $double = explode("/", substr($text, 9));
