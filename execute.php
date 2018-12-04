@@ -83,9 +83,17 @@ Ma cos'è 'sta lore di cui parlate?",
 "/Autolavaggio",
 "OBLITERANDO",
 "GIUL È UNA DELLE DUE PALLE",
-"
-Xio, Xio
+"Io je l’avevo detto a paride di mette i sensori di parcheggio",
+"Ogni anno milioni e milioni di italiani, compresi quelli all’estero, si ritrovano a Gardaland, per ricordare il sacrificio della lega dell’ingiustizia",
+"COLPO DEL CILINDRO GRADUATO",
+"AIM NUUUUUCLIIEAAAARRR",
+"woosh minori e membri delle leghe che muoiono ma tanto chi cazzo se li caga perchè alla fine contano solo i personaggi principali",
+"TAN TNA TNANT ANTNA TNANTNANANA",
+"Xio, Xio
 Addio.",
+"Se non caghi più rischi di trasformarti in un inviato delle Iene",
+"Morel ti invito ufficialmente ad entrare nel Gaudio",
+"Avrei bisogno di un patentino per il lavaggio del cervello",
 "XIO BULLO VUOLE COMBATTERE!"
 );
 $autolavaggio = array(
