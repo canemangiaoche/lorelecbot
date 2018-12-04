@@ -899,14 +899,6 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	}
 	}
 }
-while(1)
-{
-	if($giorno == ("21:47:00")
-	{
-		$response = "BUONGIORNO SOFTGUNNER";
-	}
-	sleep(1);
-}
 /*else
 {
 	$response = "sto comando nn esiste cogl****e";
