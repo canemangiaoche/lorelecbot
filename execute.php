@@ -162,6 +162,17 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
 }
+elseif(strtolower($text) == "/help")
+{
+	$response = "TECNICISMI SEGRETI
+	Messaggi ottenibili con /autolavaggio: "./sizeof($autolavaggio).
+	"Messaggi ottenibili con /lore: "./sizeof($lore)."
+	Messaggi ottenibili con /kia: 24
+	Messaggi ottenibili con /kio: 8
+	Uccisioni confermabili: 9
+	Interazioni LoreBot: 10
+	";
+}
 elseif( strpos(strtolower($text), "aaaa") !== false )
 {
    $response = "AAAAAAAAAAAAAAAAAAAAAA";
