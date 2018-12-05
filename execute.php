@@ -599,8 +599,8 @@ if(strpos($text, "/ciula") === 0)
 {
 	$abc = array_rand($ciula);
 	$response = $ciula[rand(0,sizeof($ciula)-1)];
-	$parameters = array('chat_id' => $chatId, "audio" => $response);
-	$parameters["method"] = "sendAudio";
+	$parameters = array('chat_id' => $chatId, "voice" => $response);
+	$parameters["method"] = "sendVoice";
 	echo json_encode($parameters);
 }
 /*if(strpos($text, "/scrivente") === 0)
