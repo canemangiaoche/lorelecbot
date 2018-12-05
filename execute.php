@@ -606,8 +606,8 @@ if(strpos($text, "/ciula") === 0)
 /*if(strpos($text, "/scrivente") === 0)
 {
 	$response = "$scrivente";
-}*/
-/*if(strpos($text, "/link") === 0)
+}
+if(strpos($text, "/link") === 0)
 {
 	$parameters = array('chat_id' => $chatId, "invite_link" => $link);
 	$parameters["method"] = "getChat";
@@ -617,7 +617,7 @@ if(strpos($text, "/ciula") === 0)
 	else
 	{
 	$response = "Fai troppo schifo per richiedere il link";
-	}*/
+	}
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
