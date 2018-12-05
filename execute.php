@@ -547,11 +547,13 @@ function sendMessage() {
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
+	return;
 }
 function sendSticker() {
 	$parameters = array('chat_id' => $chatId, "file_id" => $file_id);
 	$parameters["method"] = "sendSticker";
 	echo json_encode($parameters);
+	return;
 }
 if(strpos($text, "/start") === 0)
 {
