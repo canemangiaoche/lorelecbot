@@ -6,7 +6,7 @@ if(!$update)
   exit;
 }
 //require(“send-sticker.php”);
-date_default_timezone_set('GMT');
+date_default_timezone_set('Europe/Rome');
 $giorno = date("H:i:s");
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
@@ -577,18 +577,22 @@ if(strpos($text, "/copypasta") === 0)
 /*if(strpos($text, "/scrivente") === 0)
 {
 	$response = "$scrivente";
-}
+}*/
 if(strpos($text, "/link") === 0)
 {
-	if (isset($link))
-	{
+	$parameters = array('chat_id' => $chatId, "invite_link" => $link);
+	$parameters["method"] = "getChat";
+	$link = $parameters['invite_link'];
 	$response = "Link Regno: $link";
-	}
+	/*}
 	else
 	{
 	$response = "Fai troppo schifo per richiedere il link";
-	}
-}*/
+	}*/
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
+}
 elseif(strpos($text, "/stocazzo") === 0)
 {
 	$response = "stocazzo";
