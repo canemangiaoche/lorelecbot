@@ -27,7 +27,7 @@ $sticker_id="CAADBAADZgEAApD3ZAYdxLS3pXN-cAI";
 $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
-$domanda = 'lorebot cosa ne pensi di';
+$domanda = 'lorebot cosa ne pensi';
 $lore = array(
 "STRONZO SONO UN NEGRO NINJA",
  "LA TIGRE DEL FAR WEB CHE GIOCA A NORELECBOT, POMPA LA LORE CHE C’È DORK QUARANTATRÈSEDICICICICI",
