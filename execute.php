@@ -23,11 +23,11 @@ $text = strtolower($text);
 header("Content-Type: application/json");
 $response = '';
 $bot_token = '587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0';
-$sticker_id="CAADBAADZgEAApD3ZAYdxLS3pXN-cAI";
+$sticker_id = "CAADBAADZgEAApD3ZAYdxLS3pXN-cAI";
 $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
-$domanda = 'lorebot cosa ne pensi';
+$domanda = 'lorebot cosa ne pensi di';
 $lore = array(
 "STRONZO SONO UN NEGRO NINJA",
  "LA TIGRE DEL FAR WEB CHE GIOCA A NORELECBOT, POMPA LA LORE CHE C’È DORK QUARANTATRÈSEDICICICICI",
@@ -81,19 +81,9 @@ Lo stiamo ammazzando per questo
 Ma cos'è 'sta lore di cui parlate?",
 "Xio Festa",
 "/Autolavaggio",
-"OBLITERANDO",
-"GIUL È UNA DELLE DUE PALLE",
-"Io je l’avevo detto a paride di mette i sensori di parcheggio",
-"Ogni anno milioni e milioni di italiani, compresi quelli all’estero, si ritrovano a Gardaland, per ricordare il sacrificio della lega dell’ingiustizia",
-"COLPO DEL CILINDRO GRADUATO",
-"AIM NUUUUUCLIIEAAAARRR",
-"woosh minori e membri delle leghe che muoiono ma tanto chi cazzo se li caga perchè alla fine contano solo i personaggi principali",
-"TAN TNA TNANT ANTNA TNANTNANANA",
-"Xio, Xio
+"
+Xio, Xio
 Addio.",
-"Se non caghi più rischi di trasformarti in un inviato delle Iene",
-"Morel ti invito ufficialmente ad entrare nel Gaudio",
-"Avrei bisogno di un patentino per il lavaggio del cervello",
 "XIO BULLO VUOLE COMBATTERE!"
 );
 $autolavaggio = array(
@@ -140,7 +130,6 @@ Fase finale:        malattia e morte",
 '" Quindi ora imparate questo, il terzo motto del nostro Supremo Concilio, e cosa esso significa misticamente. DEUS EST HOMO , vale a dire , DIO È '."L'UOMO.  Il che significa, COME IN ALTO , COSÌ IN BASSO; COME FUORI , COSÌ DENTRO.  Non c'è parte dell'uomo che non sia DIO ; e non c'è parte di DIO che non abbia la sua controparte nell'uomo.  Allora impara anche questo , che Dio non può mai essere conosciuto da te ; perché tutto ciò che conosci non è che la tua creazione, come tu sei veramente la Sua. Tu conosci Lui poiché tu sei Lui. ".'"'. 
 
 "Aleister Crowley.  #T",
-"Mmmm...ookk 100g di farina 00....mmm.....ah si 150g di zucchero...il burro....perfetto perfetto c'è tutto, posso liquefare mio figlio ora",
 "6 MORTA TROIA!!!!!!!!!!!!!!!!!! 
 
 SPAVENTATO??? (INNUMEREVOLI FACCE CHE RIDONO MA DA PC NON POSSO) INVITA QUESTO MEX AI TUOI CONTATTI WHATSAPP E VEDI CHE REAZIONE AVRANNO 😀 😀 😀 😀 😀 😀 😀 😀 😉 😉 😉 😉 😉 😉 😉 😉 😉 😉 😉 😉 ;)",
@@ -554,24 +543,38 @@ DELLA FINE DI YARA",
 "This group is the dumbest group of people I've ever seen. I work with mentally handicapped people and I've been all over the world. I have been to beauty pageants and monster truck events. I have met a kid with an IQ of 8. I have even met President George W. Bush. But this group is truly the most retarded thing I have ever encountered. While you all are posting childish ”meme” pictures, using words like ".'"LUL" and "LMAO"'.", I am studying the works of Plato, Sun Tzu, Richard and Mortimer etc. and expanding my knowledge. Guess who will have the better job in 10 years?",
 "Salve sono Troy mcclure Forse vi ricorderete di me per prima di fantascienza tipo Dov'è la mia astronave e perché si trova dentro casa tua"
 );
+function sendMessage() {
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
+}
+function sendSticker() {
+	$parameters = array('chat_id' => $chatId, "file_id" => $file_id);
+	$parameters["method"] = "sendSticker";
+	echo json_encode($parameters);
+}
 if(strpos($text, "/start") === 0)
 {
 	$response = "Preparati a soffrire, $firstname!";
+	sendMessage();
 }
 if(strpos($text, "/lore") === 0)
 {
 	$abc = array_rand($lore);
 	$response = $lore[rand(0,sizeof($lore)-1)];
+	sendMessage();
 }
 if(strpos($text, "/autolavaggio") === 0)
 {
 	$abc = array_rand($autolavaggio);
 	$response = $autolavaggio[rand(0,sizeof($autolavaggio)-1)];
+	sendMessage();
 }
 if(strpos($text, "/copypasta") === 0)
 {
 	$abc = array_rand($copypasta);
 	$response = $copypasta[rand(0,sizeof($copypasta)-1)];
+	sendMessage();
 }
 /*if(strpos($text, "/scrivente") === 0)
 {
@@ -591,26 +594,32 @@ if(strpos($text, "/link") === 0)
 elseif(strpos($text, "/stocazzo") === 0)
 {
 	$response = "stocazzo";
+	sendMessage();
 }
 elseif(strpos($text, "/use") === 0)
 {
 	$response = "USE";
+	sendMessage();
 }
 elseif(strpos($text, "/mfnb") === 0)
 {
 	$response = "MFNB";
+	sendMessage();
 }
 elseif(strpos($text, "/buongiorno") === 0)
 {
-	$response = file_get_contents('https://api.telegram.org/bot'.$bot_token.'/sendSticker?chat_id='.$chat_id.'&sticker='.$sticker_id);
+	$response = $sticker_id;
+	sendSticker();
 }
 elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
+	sendMessage();
 }
 elseif(strpos($text, "/sturla") === 0)
 {
 	$response = "Innanzitutto mi presento... luca da alessandria... 28/11/1990... regista TV... nuoto...";
+	sendMessage();
 }
 elseif( strpos(strtolower($text), "aaaa") !== false )
 {
@@ -639,14 +648,17 @@ elseif( strpos(strtolower($text), "aaaa") !== false )
 	{
    $response = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 	}
+	sendMessage();
 }
 elseif( strpos(strtolower($text), "mammt") !== false )
 {
    $response = "mammt";
+   sendMessage();
 }
-elseif( strpos(strtolower($text), "tuna") !== false && strpos(strtolower($text), "fortuna") === false && strpos(strtolower($text), "tunaxbot") === false)
+elseif( strpos(strtolower($text), "tuna") !== false )
 {
    $response = "oh non mi nominare quel vigliacco che oggi sono di buonumore";
+   sendMessage();
 }
 elseif( strpos(strtolower($text), "/fusione") !== false )
 {
@@ -665,10 +677,12 @@ elseif( strpos(strtolower($text), "/fusione") !== false )
    else {
    $response = "Sintassi: /fusione nome1/nome2";
 }
+sendMessage();
 }
 elseif( strpos(strtolower($text), $domanda) !== false && substr($text, -1) === '?')
 {
    $response = "Mi fa schifo al cazzo";
+   sendMessage();
 }
 elseif(strpos($text, "/kio") === 0)
 {
@@ -709,6 +723,7 @@ elseif(strpos($text, "/kio") === 0)
 	{
 		$response = "cazz vuo";
 	}
+	sendMessage();
 }
 elseif(strpos($text, "/kia") === 0)
 {
@@ -833,6 +848,7 @@ Miope
 2) non sono italiana
 3) mio padre è morto";
 	}
+	sendMessage();
 }
 elseif(strpos($text, "/tecnicismi") === 0)
 {
@@ -846,6 +862,7 @@ elseif(strpos($text, "/tecnicismi") === 0)
 	Uccisioni confermabili: 9
 	Interazioni LoreBot: 10
 	";
+	sendMessage();
 }
 elseif( strpos(strtolower($text), $lorebot) !== false )
 {
@@ -875,7 +892,7 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	}
 	elseif ($x == 5)
 	{
-		$response = "Addio $vittima! CANNONE SAGOMATO DI FRUTTA DURA!";
+		$response = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 	}
 	elseif ($x == 6)
 	{
@@ -883,7 +900,7 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	}
 	elseif ($x == 7)
 	{
-		$response = "$vittima, la Kiomorra ti saluta! PUGNO GENERICO!";
+		$response = "$vittima, la Kiomorra ti saluta! PUGNO!";
 	}
 	elseif ($x == 8 && $vittima !== "Giul")
 	{
@@ -937,11 +954,5 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 		$response = "We $username";
 	}
 	}
+	sendMessage();
 }
-/*else
-{
-	$response = "sto comando nn esiste cogl****e";
-}*/
-$parameters = array('chat_id' => $chatId, "text" => $response);
-$parameters["method"] = "sendMessage";
-echo json_encode($parameters);
