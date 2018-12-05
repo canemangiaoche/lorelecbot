@@ -21,7 +21,7 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 $text = strtolower($text);
 header("Content-Type: application/json");
-$response = '';
+$response = 'Qualcosa non ha funzionato, aggiusta stronzo';
 $bot_token = '587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0';
 $sticker_id = "CAADBAADZgEAApD3ZAYdxLS3pXN-cAI";
 $lorebot = 'lorebot';
@@ -547,13 +547,11 @@ function sendMessage() {
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
-	return;
 }
 function sendSticker() {
-	$parameters = array('chat_id' => $chatId, "file_id" => $file_id);
+	$parameters = array('chat_id' => $chatId, "file_id" => $sticker_id);
 	$parameters["method"] = "sendSticker";
 	echo json_encode($parameters);
-	return;
 }
 if(strpos($text, "/start") === 0)
 {
