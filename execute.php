@@ -543,38 +543,36 @@ DELLA FINE DI YARA",
 "This group is the dumbest group of people I've ever seen. I work with mentally handicapped people and I've been all over the world. I have been to beauty pageants and monster truck events. I have met a kid with an IQ of 8. I have even met President George W. Bush. But this group is truly the most retarded thing I have ever encountered. While you all are posting childish ”meme” pictures, using words like ".'"LUL" and "LMAO"'.", I am studying the works of Plato, Sun Tzu, Richard and Mortimer etc. and expanding my knowledge. Guess who will have the better job in 10 years?",
 "Salve sono Troy mcclure Forse vi ricorderete di me per prima di fantascienza tipo Dov'è la mia astronave e perché si trova dentro casa tua"
 );
-function sendMessage($response) {
-	$parameters = array('chat_id' => $chatId, "text" => $response);
-	$parameters["method"] = "sendMessage";
-	echo json_encode($parameters);
-}
-function sendSticker($response) {
-	$parameters = array('chat_id' => $chatId, "file_id" => $response);
-	$parameters["method"] = "sendSticker";
-	echo json_encode($parameters);
-}
 if(strpos($text, "/start") === 0)
 {
 	$response = "Preparati a soffrire, $firstname!";
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 if(strpos($text, "/lore") === 0)
 {
 	$abc = array_rand($lore);
 	$response = $lore[rand(0,sizeof($lore)-1)];
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 if(strpos($text, "/autolavaggio") === 0)
 {
 	$abc = array_rand($autolavaggio);
 	$response = $autolavaggio[rand(0,sizeof($autolavaggio)-1)];
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 if(strpos($text, "/copypasta") === 0)
 {
 	$abc = array_rand($copypasta);
 	$response = $copypasta[rand(0,sizeof($copypasta)-1)];
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 /*if(strpos($text, "/scrivente") === 0)
 {
@@ -594,32 +592,44 @@ if(strpos($text, "/link") === 0)
 elseif(strpos($text, "/stocazzo") === 0)
 {
 	$response = "stocazzo";
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif(strpos($text, "/use") === 0)
 {
 	$response = "USE";
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif(strpos($text, "/mfnb") === 0)
 {
 	$response = "MFNB";
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif(strpos($text, "/buongiorno") === 0)
 {
 	$response = $sticker_id;
-	sendSticker($response);
+	$parameters = array('chat_id' => $chatId, "file_id" => $response);
+	$parameters["method"] = "sendSticker";
+	echo json_encode($parameters);
 }
 elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif(strpos($text, "/sturla") === 0)
 {
 	$response = "Innanzitutto mi presento... luca da alessandria... 28/11/1990... regista TV... nuoto...";
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif( strpos(strtolower($text), "aaaa") !== false )
 {
@@ -648,17 +658,23 @@ elseif( strpos(strtolower($text), "aaaa") !== false )
 	{
    $response = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 	}
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif( strpos(strtolower($text), "mammt") !== false )
 {
    $response = "mammt";
-   sendMessage($response);
+   $parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif( strpos(strtolower($text), "tuna") !== false )
 {
    $response = "oh non mi nominare quel vigliacco che oggi sono di buonumore";
-   sendMessage($response);
+   $parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif( strpos(strtolower($text), "/fusione") !== false )
 {
@@ -677,12 +693,16 @@ elseif( strpos(strtolower($text), "/fusione") !== false )
    else {
    $response = "Sintassi: /fusione nome1/nome2";
 }
-sendMessage($response);
+$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif( strpos(strtolower($text), $domanda) !== false && substr($text, -1) === '?')
 {
    $response = "Mi fa schifo al cazzo";
-   sendMessage($response);
+   $parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif(strpos($text, "/kio") === 0)
 {
@@ -723,7 +743,9 @@ elseif(strpos($text, "/kio") === 0)
 	{
 		$response = "cazz vuo";
 	}
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif(strpos($text, "/kia") === 0)
 {
@@ -848,7 +870,9 @@ Miope
 2) non sono italiana
 3) mio padre è morto";
 	}
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif(strpos($text, "/tecnicismi") === 0)
 {
@@ -862,7 +886,9 @@ elseif(strpos($text, "/tecnicismi") === 0)
 	Uccisioni confermabili: 9
 	Interazioni LoreBot: 10
 	";
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
 elseif( strpos(strtolower($text), $lorebot) !== false )
 {
@@ -954,5 +980,7 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 		$response = "We $username";
 	}
 	}
-	sendMessage($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
 }
