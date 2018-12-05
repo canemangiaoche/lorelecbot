@@ -644,7 +644,7 @@ elseif( strpos(strtolower($text), "mammt") !== false )
 {
    $response = "mammt";
 }
-elseif( strpos(strtolower($text), "tuna") !== false )
+elseif( strpos(strtolower($text), "tuna") !== false && strpos(strtolower($text), "fortuna") === false && strpos(strtolower($text), "tunaxbot") === false)
 {
    $response = "oh non mi nominare quel vigliacco che oggi sono di buonumore";
 }
@@ -875,7 +875,7 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	}
 	elseif ($x == 5)
 	{
-		$response = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+		$response = "Addio $vittima! CANNONE SAGOMATO DI FRUTTA DURA!";
 	}
 	elseif ($x == 6)
 	{
@@ -883,7 +883,7 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	}
 	elseif ($x == 7)
 	{
-		$response = "$vittima, la Kiomorra ti saluta! PUGNO!";
+		$response = "$vittima, la Kiomorra ti saluta! PUGNO GENERICO!";
 	}
 	elseif ($x == 8 && $vittima !== "Giul")
 	{
