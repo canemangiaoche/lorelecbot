@@ -28,6 +28,27 @@ $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
 $domanda = 'lorebot cosa ne pensi di';
+$ciula = array(
+"AwADBAADnAADdcOxUJEr_ArFHHikAg",
+"AwADBAADnQADdcOxUFoDMaHmlqQTAg",
+"AwADBAADrAADdcOxUIHQx3t5yyqoAg",
+"AwADBAADoAADdcOxUDqKuOaHCNjRAg",
+"AwADBAADrgADdcOxUAtNec4hcP1zAg",
+"AwADBAADrQADdcOxUIuGUJ7-vG2gAg",
+"AwADBAADogADdcOxUCyk3eNejYAjAg",
+"AwADBAADsAADdcOxUNonZ2wPAr8nAg",
+"AwADBAADngADdcOxUAAB4zmGpfRrLAI",
+"AwADBAADrwADdcOxUF-SR71fIO3oAg",
+"AwADBAADqAADdcOxUEGV6BPm7vOYAg",
+"AwADBAADoQADdcOxUOS8y_gcTigUAg",
+"AwADBAADpgADdcOxUJ_QY2hT91-PAg",
+"AwADBAADqQADdcOxUJy1_R_Ntuw0Ag",
+"AwADBAADsQADdcOxUAReiezNNqo9Ag",
+"AwADBAADpwADdcOxUL4Sdd4Ifz3-Ag",
+"AwADBAADqgADdcOxUGWiL-1U--UuAg",
+"AwADBAADpQADdcOxULpAqYkmtiamAg",
+"AwADBAADqwADdcOxUG2yitiJqMxtAg"
+);
 $lore = array(
 "STRONZO SONO UN NEGRO NINJA",
  "LA TIGRE DEL FAR WEB CHE GIOCA A NORELECBOT, POMPA LA LORE CHE C’È DORK QUARANTATRÈSEDICICICICI",
@@ -574,11 +595,19 @@ if(strpos($text, "/copypasta") === 0)
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
+if(strpos($text, "/ciula") === 0)
+{
+	$abc = array_rand($ciula);
+	$response = $ciula[rand(0,sizeof($ciula)-1)];
+	$parameters = array('chat_id' => $chatId, "audio" => $response);
+	$parameters["method"] = "sendAudio";
+	echo json_encode($parameters);
+}
 /*if(strpos($text, "/scrivente") === 0)
 {
 	$response = "$scrivente";
 }*/
-if(strpos($text, "/link") === 0)
+/*if(strpos($text, "/link") === 0)
 {
 	$parameters = array('chat_id' => $chatId, "invite_link" => $link);
 	$parameters["method"] = "getChat";
@@ -592,7 +621,7 @@ if(strpos($text, "/link") === 0)
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
-}
+}*/
 elseif(strpos($text, "/stocazzo") === 0)
 {
 	$response = "stocazzo";
@@ -885,6 +914,7 @@ elseif(strpos($text, "/tecnicismi") === 0)
 	Messaggi ottenibili con /autolavaggio: ".sizeof($autolavaggio)."
 	Messaggi ottenibili con /lore: ".sizeof($lore)."
 	Messaggi ottenibili con /copypasta: ".sizeof($copypasta)."
+	Messaggi vocali ottenibili con /ciula: ".sizeof($ciula)."
 	Messaggi ottenibili con /kia: 24
 	Messaggi ottenibili con /kio: 8
 	Uccisioni confermabili: 9
