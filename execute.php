@@ -140,6 +140,7 @@ Fase finale:        malattia e morte",
 '" Quindi ora imparate questo, il terzo motto del nostro Supremo Concilio, e cosa esso significa misticamente. DEUS EST HOMO , vale a dire , DIO È '."L'UOMO.  Il che significa, COME IN ALTO , COSÌ IN BASSO; COME FUORI , COSÌ DENTRO.  Non c'è parte dell'uomo che non sia DIO ; e non c'è parte di DIO che non abbia la sua controparte nell'uomo.  Allora impara anche questo , che Dio non può mai essere conosciuto da te ; perché tutto ciò che conosci non è che la tua creazione, come tu sei veramente la Sua. Tu conosci Lui poiché tu sei Lui. ".'"'. 
 
 "Aleister Crowley.  #T",
+"Mmmm...ookk 100g di farina 00....mmm.....ah si 150g di zucchero...il burro....perfetto perfetto c'è tutto, posso liquefare mio figlio ora",
 "6 MORTA TROIA!!!!!!!!!!!!!!!!!! 
 
 SPAVENTATO??? (INNUMEREVOLI FACCE CHE RIDONO MA DA PC NON POSSO) INVITA QUESTO MEX AI TUOI CONTATTI WHATSAPP E VEDI CHE REAZIONE AVRANNO 😀 😀 😀 😀 😀 😀 😀 😀 😉 😉 😉 😉 😉 😉 😉 😉 😉 😉 😉 😉 ;)",
