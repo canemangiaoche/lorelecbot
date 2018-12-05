@@ -613,7 +613,7 @@ elseif(strpos($text, "/mfnb") === 0)
 elseif(strpos($text, "/buongiorno") === 0)
 {
 	$response = $sticker_id;
-	$parameters = array('chat_id' => $chatId, "file_id" => $response);
+	$parameters = array('chat_id' => $chatId, "sticker" => $response);
 	$parameters["method"] = "sendSticker";
 	echo json_encode($parameters);
 }
