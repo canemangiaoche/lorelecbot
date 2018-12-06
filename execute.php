@@ -22,7 +22,6 @@ $text = trim($text);
 $text = strtolower($text);
 header("Content-Type: application/json");
 $response = 'Qualcosa non ha funzionato, aggiusta stronzo';
-$bot_token = '587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0';
 $sticker_id = "CAADBAADZgEAApD3ZAYdxLS3pXN-cAI";
 $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
