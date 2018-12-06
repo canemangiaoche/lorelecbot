@@ -27,6 +27,20 @@ $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
 $domanda = 'lorebot cosa ne pensi di';
+$vocals = array(
+"AwADBAAD4QEAAtMg4VLqiBv01nVNHQI",
+"AwADBAADSgEAAsuHuVKVWVJJidfD6QI",
+"AwADBAADhAADevwgUbvaTcUn0qruAg",
+"AwADBAAD2wADVGd0AbKb4qzzJxUNAg",
+"AwADBAADEQAD2gqxUKt4QBEOU76TAg",
+"AwADBAAD3wADkkYYUB96ki9CBFrGAg",
+"AwADBAAD4AIAAq-VLAZeAz4F5dfdcQI",
+"AwADBAADOgMAAvszgVKRH4X0hpq1sAI",
+"AwADBAADMAMAAvszgVIiH1SBFXaWRAI",
+"AwADBAAD1wUAAr9vGVDcJSdIPJuhoQI",
+"AwADBAADaAQAAr9vIVCTiiDz93uV1QI",
+"AwADBAAD5AEAAiXriFBVNWS4jG6_FwI"
+);
 $ciula = array(
 "AwADBAADnAADdcOxUJEr_ArFHHikAg",
 "AwADBAADnQADdcOxUFoDMaHmlqQTAg",
@@ -598,6 +612,14 @@ if(strpos($text, "/ciula") === 0)
 {
 	$abc = array_rand($ciula);
 	$response = $ciula[rand(0,sizeof($ciula)-1)];
+	$parameters = array('chat_id' => $chatId, "voice" => $response);
+	$parameters["method"] = "sendVoice";
+	echo json_encode($parameters);
+}
+if(strpos($text, "/audiolavaggio") === 0)
+{
+	$abc = array_rand($vocals);
+	$response = $vocals[rand(0,sizeof($vocals)-1)];
 	$parameters = array('chat_id' => $chatId, "voice" => $response);
 	$parameters["method"] = "sendVoice";
 	echo json_encode($parameters);
