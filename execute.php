@@ -520,6 +520,20 @@ elseif(strtolower($text) == "/regno")
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
+elseif(strtolower($text) == "/endepisodio")
+{
+	global $episodio = false;
+}
+elseif(strtolower($text) == "/newepisodio")
+{
+	global $episodio = true;
+	while(global $episodio === true)
+	{
+	$parameters = array('chat_id' => $canale, 'from_chat_id' => $regno, "message_id" => $response);
+	$parameters["method"] = "forwardMessage";
+	echo json_encode($parameters);
+	}
+}
 if(strpos($text, "/lore") === 0)
 {
 	$abc = array_rand($lore);
