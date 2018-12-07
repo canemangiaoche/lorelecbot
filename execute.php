@@ -26,7 +26,7 @@ $sticker_id = "CAADBAADZgEAApD3ZAYdxLS3pXN-cAI";
 $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
-$domanda = 'lorebot cosa ne pensi di';
+$domanda = 'lorebot cosa ne pensi';
 $vocals = array(
 "AwADBAAD4QEAAtMg4VLqiBv01nVNHQI",
 "AwADBAADSgEAAsuHuVKVWVJJidfD6QI",
@@ -723,7 +723,7 @@ elseif( strpos(strtolower($text), "mammt") !== false )
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
-elseif( strpos(strtolower($text), "tuna") !== false )
+elseif( strpos(strtolower($text), "tuna") !== false  && strpos(strtolower($text), 'fortuna') === false)
 {
    $response = "oh non mi nominare quel vigliacco che oggi sono di buonumore";
    $parameters = array('chat_id' => $chatId, "text" => $response);
@@ -933,6 +933,7 @@ elseif(strpos($text, "/tecnicismi") === 0)
 	$response = "TECNICISMI SEGRETI
 	
 	Messaggi ottenibili con /autolavaggio: ".sizeof($autolavaggio)."
+	Messaggi ottenibili con /audiolavaggio: ".sizeof($vocals)."
 	Messaggi ottenibili con /lore: ".sizeof($lore)."
 	Messaggi ottenibili con /copypasta: ".sizeof($copypasta)."
 	Messaggi vocali ottenibili con /ciula: ".sizeof($ciula)."
