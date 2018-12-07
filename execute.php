@@ -523,18 +523,14 @@ elseif(strtolower($text) == "/regno")
 }
 elseif(strtolower($text) == "/endepisodio")
 {
+   global $episodio = false;
    $risposta = "FINE EPISODIO";
-   $parameters2 = array('chat_id' => $regno, "text" => $risposta);
+   $parameters2 = array('chat_id' => $chatId, "text" => $risposta);
 	$parameters2["method"] = "sendMessage";
 	echo json_encode($parameters2);
-	global $episodio = false;
 }
 elseif(strtolower($text) == "/newepisodio")
 {
-   $risposta = "IL FUTURO È QUI?";
-   $parameters2 = array('chat_id' => $regno, "text" => $risposta);
-	$parameters2["method"] = "sendMessage";
-	echo json_encode($parameters2);
 	global $episodio = true;
 	while(global $episodio === true)
 	{
