@@ -504,7 +504,7 @@ elseif(strtolower($text) == "/godmode")
 	$culo = array('chat_id' => $chatId, "user_id" => $culo);
 $response["method"] = "getChatMember";
 	echo json_decode($culo);
-   $response = $culo => 'chat_id';
+	$response = $culo => "chat_id";
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
