@@ -25,6 +25,7 @@ $text = strtolower($text);
 header("Content-Type: application/json");
 $response = 'Qualcosa non ha funzionato, aggiusta stronzo';
 $sticker_id = "CAADBAADZgEAApD3ZAYdxLS3pXN-cAI";
+$elsexoanal = "CAADBAADEwEAAqfTiwcJX9RvCK_JiAI";
 $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
@@ -521,7 +522,7 @@ elseif(strtolower($text) == "/regno")
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
-elseif(strtolower($text) == "/endepisodio")
+/*elseif(strtolower($text) == "/endepisodio")
 {
    $GLOBALS['a'] = false;
    $risposta = "FINE EPISODIO";
@@ -538,7 +539,7 @@ elseif(strtolower($text) == "/newepisodio")
 	$parameters["method"] = "forwardMessage";
 	echo json_encode($parameters);
 	}
-}
+}*/
 if(strpos($text, "/lore") === 0)
 {
 	$abc = array_rand($lore);
@@ -622,6 +623,13 @@ elseif(strpos($text, "/mfnb") === 0)
 elseif(strpos($text, "/buongiorno") === 0)
 {
 	$response = $sticker_id;
+	$parameters = array('chat_id' => $chatId, "sticker" => $response);
+	$parameters["method"] = "sendSticker";
+	echo json_encode($parameters);
+}
+elseif(strpos($text, "/elsexoanal") === 0)
+{
+	$response = $elsexoanal;
 	$parameters = array('chat_id' => $chatId, "sticker" => $response);
 	$parameters["method"] = "sendSticker";
 	echo json_encode($parameters);
