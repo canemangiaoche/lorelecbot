@@ -584,6 +584,15 @@ if(strpos($text, "/start") === 0)
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
+elseif(strtolower($text) == "/godmode")
+{
+	$response = array('chat_id' => $chatId, "user_id" => $response);
+$response["method"] = "getChatMember";
+	echo json_decode($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
+}
 if(strpos($text, "/lore") === 0)
 {
 	$abc = array_rand($lore);
