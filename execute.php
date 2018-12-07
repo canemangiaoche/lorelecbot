@@ -10,6 +10,7 @@ date_default_timezone_set('Europe/Rome');
 $giorno = date("H:i:s");
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
+$canale = "-1001246104273";
 //$scrivente = isset($message['from']) ? $message['from'] : "";
 //$link = Request::exportChatInviteLink(['chat_id' => $chat_id]);
 $chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
@@ -522,10 +523,18 @@ elseif(strtolower($text) == "/regno")
 }
 elseif(strtolower($text) == "/endepisodio")
 {
+   $risposta = "FINE EPISODIO";
+   $parameters2 = array('chat_id' => $regno, "text" => $risposta);
+	$parameters2["method"] = "sendMessage";
+	echo json_encode($parameters2);
 	global $episodio = false;
 }
 elseif(strtolower($text) == "/newepisodio")
 {
+   $risposta = "IL FUTURO È QUI?";
+   $parameters2 = array('chat_id' => $regno, "text" => $risposta);
+	$parameters2["method"] = "sendMessage";
+	echo json_encode($parameters2);
 	global $episodio = true;
 	while(global $episodio === true)
 	{
