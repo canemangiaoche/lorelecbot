@@ -587,10 +587,10 @@ if(strpos($text, "/start") === 0)
 }
 elseif(strtolower($text) == "/godmode")
 {
-	$response = array('chat_id' => $chatId, "user_id" => $response);
+	$culo = array('chat_id' => $chatId, "user_id" => $culo);
 $response["method"] = "getChatMember";
-	echo json_decode($response);
-   $response = $response => 'chat_id';
+	echo json_decode($culo);
+   $response = $culo => chat_id;
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
