@@ -948,7 +948,7 @@ elseif(strpos($text, "/tecnicismi") === 0)
 }
 elseif( strpos(strtolower($text), $lorebot) !== false )
 {
-	if( strpos(strtolower($text), $attacca) !== false || strpos(strtolower($text), $uccidi) !== false)
+	if( strpos(strtolower($text), $attacca) !== false || strpos(strtolower($text), $uccidi) !== false || strpos(strtolower($text), "lorebot uccidi lorebot") === false || strpos(strtolower($text), "lorebot attacca lorebot") === false)
 	{
 		$x = random_int(0, 9);
 		$vittima = ucfirst(substr($text, 15));  
