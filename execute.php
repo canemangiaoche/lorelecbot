@@ -13,6 +13,7 @@ $messageId = isset($message['message_id']) ? $message['message_id'] : "";
 //$scrivente = isset($message['from']) ? $message['from'] : "";
 //$link = Request::exportChatInviteLink(['chat_id' => $chat_id]);
 $chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
+$regno = "-1001054285638";
 $firstname = isset($message['chat']['first_name']) ? $message['chat']['first_name'] : "";
 $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name'] : "";
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
@@ -585,6 +586,15 @@ if(strpos($text, "/start") === 0)
 	echo json_encode($parameters);
 }
 elseif(strtolower($text) == "/godmode")
+{
+	$response = array('chat_id' => $chatId, "user_id" => $response);
+$response["method"] = "getChatMember";
+	echo json_decode($response);
+	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
+}
+elseif(strtolower($text) == "/regno")
 {
 	$response = array('chat_id' => $chatId, "user_id" => $response);
 $response["method"] = "getChatMember";
