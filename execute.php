@@ -523,7 +523,7 @@ elseif(strtolower($text) == "/regno")
 }
 elseif(strtolower($text) == "/endepisodio")
 {
-   global $episodio = false;
+   $GLOBALS['a'] = false;
    $risposta = "FINE EPISODIO";
    $parameters2 = array('chat_id' => $chatId, "text" => $risposta);
 	$parameters2["method"] = "sendMessage";
@@ -531,8 +531,8 @@ elseif(strtolower($text) == "/endepisodio")
 }
 elseif(strtolower($text) == "/newepisodio")
 {
-	global $episodio = true;
-	while(global $episodio === true)
+	$GLOBALS['a'] = true;
+	while($GLOBALS['a'] === true)
 	{
 	$parameters = array('chat_id' => $canale, 'from_chat_id' => $regno, "message_id" => $response);
 	$parameters["method"] = "forwardMessage";
