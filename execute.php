@@ -505,12 +505,18 @@ elseif(strtolower($text) == "/chatid")
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
+elseif(strtolower($text) == "/userid")
+{
+	$parameters = array('chat_id' => $chatId, "text" => $userId);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
+}
 elseif(strtolower($text) == "/regno")
 {
-	$test["method"] = "getChatMember";
-	echo json_decode($test);
-	$response = array('chat_id' => $chatId, "user_id" => $test);
-	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$response["method"] = "getChatMember";
+	echo json_decode($response);
+	
+	$parameters = array('chat_id' => $regno, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
