@@ -585,7 +585,7 @@ if(strpos($text, "/start") === 0)
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
-elseif(strtolower($text) == "/godmode")
+/*elseif(strtolower($text) == "/godmode")
 {
 	$culo = array('chat_id' => $chatId, "user_id" => $culo);
 $response["method"] = "getChatMember";
@@ -594,7 +594,7 @@ $response["method"] = "getChatMember";
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
-}
+}*/
 elseif(strtolower($text) == "/regno")
 {
 	$response = array('chat_id' => $chatId, "user_id" => $response);
