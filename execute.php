@@ -163,10 +163,8 @@ Danni:                  Irreversibili
 Informazione:    prese per il culo
 Fase finale:        malattia e morte",
 '" Quindi ora imparate questo, il terzo motto del nostro Supremo Concilio, e cosa esso significa misticamente. DEUS EST HOMO , vale a dire , DIO È '."L'UOMO.  Il che significa, COME IN ALTO , COSÌ IN BASSO; COME FUORI , COSÌ DENTRO.  Non c'è parte dell'uomo che non sia DIO ; e non c'è parte di DIO che non abbia la sua controparte nell'uomo.  Allora impara anche questo , che Dio non può mai essere conosciuto da te ; perché tutto ciò che conosci non è che la tua creazione, come tu sei veramente la Sua. Tu conosci Lui poiché tu sei Lui. ".'"'. 
-
 "Aleister Crowley.  #T",
 "6 MORTA TROIA!!!!!!!!!!!!!!!!!! 
-
 SPAVENTATO??? (INNUMEREVOLI FACCE CHE RIDONO MA DA PC NON POSSO) INVITA QUESTO MEX AI TUOI CONTATTI WHATSAPP E VEDI CHE REAZIONE AVRANNO 😀 😀 😀 😀 😀 😀 😀 😀 😉 😉 😉 😉 😉 😉 😉 😉 😉 😉 😉 😉 ;)",
 "Incastrato da una cospirazione ai suoi danni ed accusato ingiustamente di crimini contro l’umanità, Hulk si ritroverà rinchiuso nel braccio della morte in attesa dell’esecuzione.
 Appresa la notizia, Tony Stark e i suoi amici Avengers si mobiliteranno per liberarlo, realizzando vari spot e pubblicità progresso nei quali saranno mostrate tutte le buone azioni e le imprese compiute dal supereroe, così da riabilitarlo agli occhi dell’opinione pubblica.",
@@ -180,12 +178,9 @@ Non ho paura di uno che parla dietro uno schermo",
 "😲 Maròòòò e c'amm cumbinat 🤣😈 io e stu  kitammuort 👉 e' XXXTentesciònn 🔫, vulevm fa na pustegg 😎😏 ma ste uagliòn fann e' prezios 🙅‍♀️e frat'm tutt american nun riesc' a s'tenè o fravaglion 🍆 ind' o cazòn  😜💦 #XXXTENTACION #Porsche #LookAtMe!",
 "i'm daddy's ❤️💦🍆 little fidget spinner💫 when daddy 💞 feels horny he lifts 🚚 me up☝️ and puts me on🔛 his huge 😩💦dick🍆 and I spin 🌀 and spin🌀 whirrrrrr 😳😳I get🉐 so🆘 dizzy💫 but daddy💞 keeps spinning 💫 me untill I squirt⛲️⛲️ leaving me all wet💦 and his cummies 🍼🍼 are all inside💠 me😳i'm daddy's ❤️💦🍆 little fidget spinner",
 "Beh, il mio pc attuale non e' molto ".'"forte"'." essendo del 2000, inoltre e' sempre rotto, quindi tempo fa decisi di prendere uno nuovo, ma non avevo/ho i soldi necessari, quindi se volete darmi qualche aiuto potete farlo qui.
-
 Ovviamente io per il canale uso solo il pc e senza un pc non posso gestirlo...
-
 Se fate una donazione mettete il vostro nickname!",
 "Ragazzi, vi chiedo un favore...
-
 Mi aiutate ad aumentare i mi piace sulla pagina facebook pizzeria antico casale borghese della mia famiglia.",
 "Entra in omega squad e ti mando anche il cazzose vuoi",
 "Sei come Caligola che blocca i rifornimenti di cibo a Roma per essere acclamato come eroe mentre sventa la carestia",
@@ -197,83 +192,46 @@ ora dovro andare nel mondo delle onbre ma vedo una luce che e la trolface che e 
 ORA SONO IL SIGNORE DELLE MEMAS E NON SI PERMETTA DI NON DIRE CHE LO SEI TU (YOU DON'T SAY TU EHHHH SONO IO)
 per questo dobbiamo lasciarci o trovato le memas",
 "🚽                                        🏃
-
 🚽                                        🏃
-
 🚽                                       🏃
-
 🚽                                      🏃
-
 🚽                                     🏃
-
  🚽                                   🏃
-
  🚽                                  🏃
-
  🚽                                 🏃
-
  🚽                                🏃
-
  🚽                               🏃
-
  🚽                              🏃
  
  🚽                             🏃
-
  🚽                            🏃
-
   🚽                          🏃 
-
   🚽                         🏃
-
   🚽                        🏃
-
   🚽                       🏃
-
   🚽                      🏃
-
   🚽                     🏃
-
   🚽                    🏃
-
   🚽                   🏃 
-
   🚽                  🏃
-
   🚽                 🏃
-
   🚽                🏃
-
   🚽               🏃
-
   🚽              🏃
-
   🚽             🏃
-
   🚽            🏃
-
   🚽           🏃
-
   🚽          🏃
-
   🚽         🏃
-
   🚽        🏃
-
   🚽       🏃
-
   🚽      🏃 
-
   🚽    🏃
-
   🚽   🏃
-
   🚽  🏃
-
   🚽 🏃
  
   🚽🚶
-
   🚽🚶💨 
            
 😓 era una scoreggia...
@@ -290,7 +248,6 @@ Boh spero di fare tante belle amicizie
 "Oggi volevo parlare di ".'"ideali"'." nello specifico se è giusto fare una cosa moralmente corretta perchè si crede nel suo valore o per motivi secondari. Con questo volevo collegarmi ad un altro tema: l'essere radical chic. Le persone criticano il fatto che alcuni membri della cosiddetta ".'"elite"'." sostengano cause di sinistra cosiddette radical (provenienti da una filosofia marxista) seppur lontane dal loro stile di vita o dal loro ceto sociale. Alcuni lo definiscono egoismo o semplice voglia di mostrarsi ma siamo sicuri che sia peggio un ".'"ricco"'." con questi ideali o un ricco ".'"menefreghista"?',
 "Ripeto:
 Se VACCINI tuo figlio, nei primi 6 anni di vita riceve quanto segue:
-
 • 17.500 mcg 2-fenossietanolo (antigelo)
 • 5.700 mcg di alluminio (neurotossina)
 • Quantità sconosciute di siero bovino fetale (sangue di mucca abortito)
@@ -317,7 +274,6 @@ Se VACCINI tuo figlio, nei primi 6 anni di vita riceve quanto segue:
 • 35.000 mcg di proteine ​​del lievito (fungo)
 • 5.000 mcg di urea (rifiuti metabolici da urina umana)
 • Altri residui chimici
-
 (Dal libro ".'"Quello che le aziende farmaceutiche non vogliono sapere sui vaccini"'." - di Dr.odd M. Elsner)",
 "Ah ma avete riaperto sto gruppo coglioni del cazzo? Allora guardate fate che bannarmi anche con sto profilo. Almeno stavolta mi sfogo e mi bannerete con ragione, visto che le altre volte mi avete bannato per dei motivi assurdi e completamente privi di senso. Siete una massa di teste di cazzo col culo nel burro. Ma oltretutto di quelle teste di cazzo più perniciose siete. Perché siete teste di cazzo che hanno letto 2 libri. Attenzione: però non più di due libri.... E quindi come diceva Pasolini, le peggiori teste di minchia (lui non diceva così ma io lo parafraso) , non sono coloro che sono completamente privi di cultura, che quindi hanno un po' di ".'"genio selvatico"'." primordiale intrinseco, non sono neanche palesemente coloro che di cultura ne hanno molta. No : le vere teste di cazzo sono appunto quelli che hanno una cultura mediana. Ed adesso lurido amministratore segaiolo frustrato del cazzo bannami. Mi dispiace solo perché sto gruppo era nato come nicchia geniale di ".'"controcultura facebookkara"'." . Ma da nicchia geniale si è trasformato in un covo di idioti e saccenti lacchè eunuchi. Vaffanculo mentecatti.",
 "Stanotte non esprimete desideri alle stelle ... muovete il culo e prendete ciò che desiderate! VOLERE È POTERE .... NOTTE⭐️🌟🌠⭐️🌟🌠⭐️🌟",
@@ -325,7 +281,6 @@ Se VACCINI tuo figlio, nei primi 6 anni di vita riceve quanto segue:
 A me piace essere mangiato da una donna. (o essere vivente femminile in alcuni casi) . Non da Bowser, anzi è abbastanza disturbante come cosa.",
 "********++++++*********PRESIDENTE GENTILONI, NON FACCIA LA FOTOCOPIA DEL GOVERNO RENZI, CON ALFANO E LE SUE POLITICHE DI INVASIONI DI FINTI RIFUGIATI, CHE STANNO CONTINUANDO AD ARRIVARE IN ITALIA GRAZIE ALL'INCOMPETENZA DI #ALFANO ED ANCHE SUA #GENTILONI (15.000 NUOVI ARRIVI DI FINTI RIPETO FINTI RIFUGIATI DATI DI #ALFANO) CHE INSIEME AI 700.000 FINTI RIFUGIATI ACCOLTI DA ALFANO-RENZI IN DUE ANNI DI GOVERNO,  FANNO E FARANNO INCAVOLARE E DESTABILIZZARE ANCOR PIù GLI ITALIANI, CHE  LE RICORDO (anche l'ISTAT) ORMAI NON SOPPORTANO PIù LE POLITICHE ANTIITALIANE E FILO FINTI RIFUGIATI, CHE #RENZI, #ALFANO, #GENTILONI STESSO E TUTTO IL GOVERNO USCENTE HANNO ATTUATO AI DANNI DEGLI ITALIANI (9 MILIONI DI  NUOVI POVERI E 6 MILIONI DI GIOVANI ITALIANI SENZA LAVORO E FUTURO) FALLIMENTO DEL JOBS ACT E DELLE POLITICHE OCCUPAZIONALI, POLITICHE SOCIALI SOLO PER I FINTI RIFUGIATI E STRANIERI AI DANNI DEI SUDDETTI ITALIANI, CHE ORMAI SONO SOSTENUTI SOLO DALLA CARITAS, CRESITA PIL O,7, PRATICAMENTE NIENTE E NON VADO OLTRE SUL DISASTRO DI QUESTO GOVERNO RENZI-ALFANO USCENTE, CHE HANNO IN DUE ANNI FATTO SOLO  DISASTRI E NIENTE DI POSITIVO PER GLI ITALIANI; TUTTA LA SUA LINEA POLITICA è STATA IMPRONTATA ALL'AIUTO DEI FINTI E FALSI MIGRANTI, CHE LA UE CI DICE DI SALVARE, RICONOSCERLI E RIMPATRIARLI, COME DICE LA UE TUTTA, CHE SU QUESTO HA SONORAMENTE BACCHETTATO #RENZI E #ALFANO, MA ANCHE #GENTILONI, CHE SBAGLIA, SE RIPROPONE #ALFANO E GLI STESSI MINISTRI USCENTI E IL LORO PROGRAMMA, CHE GLI ITALIANI HANNO BOCCIATO IN MASSA NOTEVOLE AL RECENTE REFERENDUM!!!!#GENTILONI, SE NON VORRAI PROBLEMI, CAMBIA POLITICA SUI SUDDETTI TEMI, ALTRIMENTI NON DURERAI IL PERIODO DELLA NUOVA LEGGE ELETTORALE E TI DICO SUBITO, CHE SARAI CONTESTATO E ODIATO, PIù DI RENZI ED ALFANO, CHE NON DEVI ASSOLUTAMENTE METTERE IN QUESTO TUO GOVERNO. #ALFANO è IL PEGGIOR MINISTRO  DANNOSO ED ANTITALIANO DEL GOVERNO USCENTE, DEVI TENERL FUORI DAL TUO GOVERNO E DEVI CAMBIARE TUTTI I MINISTRI, IN QUANTO RAPPRESENTANO COLORO",
 "Mamma pensa ke mi faccio le nneca quando in realtà mi è andato dello shampoo negli occhi 😓😓😓😓😓😓😓😓😭😭😭😭😭😭😭
-
 perdoname madre por mi doccia loca  te quiero 😭😭😭😭😭😓😓💘",
 "We @TheConquister37",
 "A disen ".'"la canzon la nass a Napoli"'."
@@ -334,7 +289,6 @@ Surriento, Margellina, tutti i popoli
 j'avrann cantaa almen on milion de volt.
 Mì speri che se offendarà nissun
 se cantom on ciccin anca de nun...
-
 Oh, mia bella Madonnina,
 che te brillet de lontan,
 tutta d'ora e piscinina
@@ -343,14 +297,12 @@ sott a tì se viv la vita,
 se sta mai coi man in man,
 canten tucc ".'"lontan de Napoli se moeur"'."
 ma poeu vegnen chì a Milan!
-
 Adess gh'è la canzon de Roma maggica
 de Nina, er Cupolone, Rugantin;
 se sbatten in del Tever, robba tragica:
 esageren, me par, on ciccinin;
 speremm che vegna minga la mania
 de mettes a cantà ".'"Malano mia!".'."
-
 Oh, mia bella Madonnina,
 che te brillet de lontan,
 tutta d'ora e piscinina
@@ -368,10 +320,6 @@ Vi siete mai incamminati per le vie di questa città rovinate e vecchie ma anche
 Avete mai parlato con un napoletano? Avete notato come non gli manchi mai la voglia di vivere al massimo, di cantare, di meravigliarsi per le piccole cose?
 Avete mai notato, semplicemente, come Napoli e i napoletani siano il meglio dell'Italia, nonostante i loro difetti, proprio grazie ai loro difetti?",
 "Mi chiamo Virgola, sono un gattino, sono la stella del telefonino
-
-
-
-
 Solo in pochi capiranno 👉🌚👉",
 "Ma ci pensate se esistesse una scuola con solo ragazze e ragazzi tumblr? Dove si studia tutta la storia di Bukowski, dove l'unico problema è capire noi chi siamo. Una scuola di persone che leggono solo libri, di grandi bar che vendono the e cioccolate calde, dove i ragazzi indossano maglioni larghi e vans, dove tutti usano lo skate. Una scuola fatta da noi, dove ci si aiuta. La scuola di tumblr, dove le ragazze si mordono sempre le labbra. Una scuola che ti insegna come vivere e non di come hanno vissuto gli altri.",
 "Santino sei proprio ignorante ancora no hai capito che no avete niente nel questo mondo che il cacao proviene della costa,quindi normale che fanno la pubblicità almeno per fare vedere a l'Africa come l'Europa rombano le nostre cose,quindi quello che chiami bocca è da chiuderla.ok??ignorante",
@@ -381,29 +329,21 @@ Se hai un cuore fai girare",
 "Tu che tipo sei 
 1😁
   👙MARE
-
 2😍
   👗ELEGANTE
-
 3😱
   👕
   👖SPORTIVO
-
 4😘
   👘ANTICO
    
    
 5😏
   👚CLASSICO
-
-
-
-
 Manda a tutti questa catena e scrivi che tipo sei tu .
 Senò domani ti capiterà qualcosa di brutto",
 "White people are not aliens. Negros are actually animals, literal animals, who exist on earth to serve humans. Because they talk and look humanoid, over time, white people have forgotten what negros really are and are treating them like humans, when they are in fact, animals. Consider the man bites dog analogy. When a dog bites a man (black attacks a human) it is because the man/human was not careful around the dog/black or provoked it without considering its nature and propensity to bite. When this happens, the person is not the victim. Now, if a man were to bite the dog back, the dog is the victim because the dog is a helpless stupid animal that was following its instincts and the man is a human and holds dominion over the dog (supremacy / privilege) and that is an unnatural act. Only when negros are put back into their natural roles will the natural order be restored and all of this racial strife, crime, disease etc.end.",
 "Non c'è cosa più DISGUSTOSA, di cliccare su un ".'""""""maschio"""""'." che non hai tra gli amici ma con il quale hai tante amicizie in comune e vedere che ha SOLO ragazze in comune con te, con la differenza che tu ci parli, ci giochi e ci esci, lui le espone come TROFEO, perché figurati se un aborto mancato del genere ha anche solo mai pensato di provare a scrivere ad una delle tue amiche. 
-
 Grazie dello sfogo.",
 "S6 EDGE PLUS tenuto benissimo nn ha craffi e la bateria e dok qualssiasi prova se volete fare il telefono e un gioielo ha la foto camera che fa foto video meravigliosi prezzo nn trat 280",
 "‍‍ ‍‍ ‍‍ ‍‍ ‍‍ ‍‍ ‍‍ ‍‍ ‍‍ ".'‍‍"Ciò che Dio creò come 
@@ -432,21 +372,18 @@ NA NA NA NA
         ( Ｕ   つ
                 )  )  )
                   (＿)_)
-
 Sono un ebreo
   ()__()
   ( ･∀･)
  ⊂ ⊂ )
    ( (  (    
   (_(＿)
-
 AMO 
   ()__()    
 （ ･∀･)
 ⊂_へ つ
  (＿)｜
 彡 (＿)
-
            Bruciare
                ()_()  
               (･_･)っ 
@@ -457,7 +394,6 @@ AMO
 ⊂(・＿・ ) 
  ヽ ⊂二/
  (⌒)  /
-
            FORNI
     __()_()______
 ／        ＼
@@ -467,86 +403,65 @@ AMO
 (•_•)
 <)   )╯ Brucio di qua
 /    \
-
   ()_()
   (•_•)
 <(   (>    Brucio di là
   /    \
-
   ()_()
   (•_•)
 ~ (   ) ~  NA NA NA NA
    /    \
-
 ()_()
 (•_•)
 <)   )- se non mi credi
 /    \
-
 ()_()
 (•_•)
 /(   (> problemi tuoi
 /    \
-
 ()_()
 (•_•)/
 <)   )  sono un ebreo
 /    \
-
  ()_()
 \(•_•)
   (   (> lo sai
   /   \
-
 ()_()
 (•_•)
 <)   )/ e non te ne pentirai
   /    \
-
   ()_()
 \(•_•)
   ( . (> no furer
   /    \
-
 ()_()
 (•_•)
 <)   )>  Parola mia
   /   \
-
   ()_()
 \(•_•)
   (   (>  Parola di ebreo
   /   \    
-
        ()___()
 °•°•°(╯°□°)╯︵  BRUCIO DI QUA
-
           ()___()
  ︵ ヽ(°□°ヽ) •°•°• BRUCIO DI LÀ
-
                  ()()
 °•°•° ︵ ＼('0')/／ ︵ •°•°•
 BRUCIO DAPPERTUTTO
-
 *ಠ_ಠ GLI.*
-
 *ಠ_ಠ EBREI.*
-
 *ಠ__ಠ SONO.*
-
 *ಠ___ಠ PERSONE.*
-
 ()__()
 (╮°-°)╮┳━┳
-
 ()___()
 (╯°□°)╯︵ ┻━┻ COS-
-
 ()_()
 (•_•)
 <)   )> Stai scherzando?
 /    \    GLI EBREI SONO 
-
 ⊂_ヽ
   ＼＼ ()__()
    ＼( •_•) C
@@ -569,7 +484,6 @@ La prossima volta anziché mobilitare quei 4 mentecatti che ti seguono facendoci
 COME UNA RONDINE
 SOPRA LE NUVOLE
 DALLA SUA PIETA'
-
 BOSSETTI E' LIBERO 
 IMPERTURBABILE
 ORA PUO' RIDERE
@@ -585,16 +499,16 @@ if(strpos($text, "/start") === 0)
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
-/*elseif(strtolower($text) == "/godmode")
+elseif(strtolower($text) == "/godmode")
 {
 	$culo = array('chat_id' => $chatId, "user_id" => $culo);
 $response["method"] = "getChatMember";
 	echo json_decode($culo);
-   $response = $culo => chat_id;
+   $response = $culo => 'chat_id';
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
-}*/
+}
 elseif(strtolower($text) == "/regno")
 {
 	$response = array('chat_id' => $chatId, "user_id" => $response);
