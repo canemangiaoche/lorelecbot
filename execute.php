@@ -499,21 +499,17 @@ if(strpos($text, "/start") === 0)
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
-elseif(strtolower($text) == "/godmode")
+elseif(strtolower($text) == "/chatid")
 {
-	$culo = array('chat_id' => $chatId, "user_id" => $culo);
-$response["method"] = "getChatMember";
-	echo json_decode($culo);
-	$response = $culo => "chat_id";
-	$parameters = array('chat_id' => $chatId, "text" => $response);
+	$parameters = array('chat_id' => $chatId, "text" => $chatId);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
 elseif(strtolower($text) == "/regno")
 {
-	$response = array('chat_id' => $chatId, "user_id" => $response);
-$response["method"] = "getChatMember";
-	echo json_decode($response);
+	$test["method"] = "getChatMember";
+	echo json_decode($test);
+	$response = array('chat_id' => $chatId, "user_id" => $test);
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
