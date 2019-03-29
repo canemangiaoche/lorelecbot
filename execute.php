@@ -144,7 +144,9 @@ elseif(strpos($text, "/guerra") === 0)
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 	sleep(10);
-	while((sizeof($aquila)) > 1)
+	for(;;)
+	{
+	if((sizeof($aquila)) > 1)
 	{
 		$w = $aquila[rand(0,sizeof($aquila)-1)];
 		$l = $aquila[rand(0,sizeof($aquila)-1)];
@@ -161,9 +163,12 @@ elseif(strpos($text, "/guerra") === 0)
 		$aquila = array_values($aquila);		
 		sleep(60);
 	}
-	$parameters = array('chat_id' => $chatId, "text" => $response);
-	$response = "Il comune di ".$aquila[0]." ha conquistato L'Abruzzo!";
-	$parameters["method"] = "sendMessage";
-	echo json_encode($parameters);
-	return;
+	else {
+		$parameters = array('chat_id' => $chatId, "text" => $response);
+		$response = "Il comune di ".$aquila[0]." ha conquistato L'Abruzzo!";
+		$parameters["method"] = "sendMessage";
+		echo json_encode($parameters);
+		return;
+	}
+}
 }
