@@ -143,26 +143,26 @@ elseif(strpos($text, "/guerra") === 0)
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
-	$provincia = $aquila;
 	sleep(10);
 	while((sizeof($provincia)) > 1)
 	{
-		$w = $provincia[rand(0,sizeof($provincia)-1)];
-		$l = $provincia[rand(0,sizeof($provincia)-1)];
+		$w = $aquila[rand(0,sizeof($aquila)-1)];
+		$l = $aquila[rand(0,sizeof($aquila)-1)];
 		while ($w == $l)
 		{
-			$l[rand(0,sizeof($provincia)-1)];	
+			$l[rand(0,sizeof($aquila)-1)];
+			sleep(1);			
 		}
 		$parameters = array('chat_id' => $chatId, "text" => $response);
-		$response = "[".date('h:i:s')."]: Il comune di $w ha sconfitto il comune di $l! ".sizeof($provincia)." comuni rimanenti.";
-		unset($aquila[$l]);
-		array_values($aquila);
+		$response = "Il comune di $w ha sconfitto il comune di $l! ".sizeof($aquila)." comuni rimanenti.";
 		$parameters["method"] = "sendMessage";
-		echo json_encode($parameters);		
+		echo json_encode($parameters);
+		unset($aquila[$l]);
+		array_values($aquila);		
 		sleep(60);
 	}
 	$parameters = array('chat_id' => $chatId, "text" => $response);
-	$response = "[".date('h:i:s')."]: Il comune di ".$provincia[0]." ha conquistato L'Abruzzo!";
+	$response = "Il comune di ".$aquila[0]." ha conquistato L'Abruzzo!";
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 	return;
