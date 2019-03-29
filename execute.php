@@ -152,7 +152,7 @@ elseif(strpos($text, "/guerra") === 0)
 		$l = $aquila[rand(0,sizeof($aquila)-1)];
 		while ($w == $l)
 		{
-			$l = [rand(0,sizeof($aquila)-1)];
+			$l = $aquila[rand(0,sizeof($aquila)-1)];
 			sleep(1);			
 		}
 		$parameters = array('chat_id' => $chatId, "text" => $response);
