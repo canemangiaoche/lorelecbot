@@ -143,6 +143,7 @@ elseif(strpos($text, "/guerra") === 0)
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
+	$provincia = $aquila;
 	while((sizeof($provincia)) > 1)
 	{
 		$w = $provincia[rand(0,sizeof($provincia)-1)];
