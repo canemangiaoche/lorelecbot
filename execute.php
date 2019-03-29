@@ -159,7 +159,8 @@ elseif(strpos($text, "/guerra") === 0)
 		$response = "Il comune di $w ha sconfitto il comune di $l! ".sizeof($aquila)." comuni rimanenti.";
 		$parameters["method"] = "sendMessage";
 		echo json_encode($parameters);
-		unset($aquila[$l]);
+		$index = array_search($l, $aquila);
+		unset($aquila[$index]);
 		$aquila = array_values($aquila);		
 		sleep(60);
 	}
