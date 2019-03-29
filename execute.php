@@ -139,15 +139,10 @@ if(strpos($text, "/start") === 0)
 }
 elseif(strpos($text, "/guerra") === 0)
 {
-	guerra($aquila);
 	$response = "LA GUERRA HA INIZIO!";
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
-}
-
-function guerra($provincia)
-{
 	while((sizeof($provincia)) > 1)
 	{
 		$w = $provincia[rand(0,sizeof($provincia)-1)];
@@ -157,7 +152,7 @@ function guerra($provincia)
 			$l[rand(0,sizeof($provincia)-1)];	
 		}
 		$parameters = array('chat_id' => $chatId, "text" => $response);
-		$response = "Il comune di $w ha sconfitto il comune di $l! ".sizeof($provincia)." comuni rimanenti.";
+		$response = "[".date('h:i:s')."]: Il comune di $w ha sconfitto il comune di $l! ".sizeof($provincia)." comuni rimanenti.";
 		unset($aquila[$l]);
 		array_values($aquila);
 		$parameters["method"] = "sendMessage";
@@ -165,7 +160,7 @@ function guerra($provincia)
 		sleep(60);
 	}
 	$parameters = array('chat_id' => $chatId, "text" => $response);
-	$response = "Il comune di ".$provincia[0]." ha conquistato L'Abruzzo!";
+	$response = "[".date('h:i:s')."]: Il comune di ".$provincia[0]." ha conquistato L'Abruzzo!";
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 	return;
