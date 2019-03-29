@@ -158,7 +158,7 @@ elseif(strpos($text, "/guerra") === 0)
 		$parameters["method"] = "sendMessage";
 		echo json_encode($parameters);
 		unset($aquila[$l]);
-		array_values($aquila);		
+		$aquila = array_values($aquila);		
 		sleep(60);
 	}
 	$parameters = array('chat_id' => $chatId, "text" => $response);
