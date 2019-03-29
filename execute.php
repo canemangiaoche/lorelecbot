@@ -144,7 +144,7 @@ elseif(strpos($text, "/guerra") === 0)
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 	sleep(10);
-	while((sizeof($provincia)) > 1)
+	while((sizeof($aquila)) > 1)
 	{
 		$w = $aquila[rand(0,sizeof($aquila)-1)];
 		$l = $aquila[rand(0,sizeof($aquila)-1)];
