@@ -544,6 +544,19 @@ DELLA FINE DI YARA",
 "This group is the dumbest group of people I've ever seen. I work with mentally handicapped people and I've been all over the world. I have been to beauty pageants and monster truck events. I have met a kid with an IQ of 8. I have even met President George W. Bush. But this group is truly the most retarded thing I have ever encountered. While you all are posting childish ”meme” pictures, using words like ".'"LUL" and "LMAO"'.", I am studying the works of Plato, Sun Tzu, Richard and Mortimer etc. and expanding my knowledge. Guess who will have the better job in 10 years?",
 "Salve sono Troy mcclure Forse vi ricorderete di me per prima di fantascienza tipo Dov'è la mia astronave e perché si trova dentro casa tua"
 );
+function sendMessage($messaggio) {
+    $url = "https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@AbruzzoGuerra1980";
+    $url = $url . "&text=" . urlencode($messaggio);
+    $ch = curl_init();
+    $optArray = array(
+            CURLOPT_URL => $url,
+            CURLOPT_RETURNTRANSFER => true
+    );
+    curl_setopt_array($ch, $optArray);
+    $result = curl_exec($ch);
+    curl_close($ch);
+    return $result;
+}
 if(strpos($text, "/start") === 0)
 {
 	$response = "Preparati a soffrire, $firstname!";
@@ -600,12 +613,11 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 }
 elseif(strtolower($text) == "/guerra")
 {
-	echo json_encode($parameters);
-			for($i = 0; i < sizeof($battaglia); $i++)
+			for($i = 0; $i < sizeof($battaglia); $i++)
 			{	
-			$response = file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@AbruzzoGuerra1980&text=".$battaglia[$i]);
-			$result = Request::sendMessage();
-			sleep(20);
+			//$response = file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@AbruzzoGuerra1980&text=".$battaglia[$i]);
+			sendMessage($battaglia[$i]);
+			sleep(2);
 			}	
 }
 elseif(strpos($text, "/sturla") === 0)
