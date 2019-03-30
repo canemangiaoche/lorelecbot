@@ -620,7 +620,8 @@ elseif(strtolower($text) == "/guerra")
 			//sendMessage($battaglia[$i]);
 			sleep(30);
 			//usleep(200);
-			}	
+			}
+	return;
 }
 elseif(strpos($text, "/sturla") === 0)
 {
