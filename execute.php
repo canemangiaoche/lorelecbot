@@ -546,7 +546,7 @@ DELLA FINE DI YARA",
 "Salve sono Troy mcclure Forse vi ricorderete di me per prima di fantascienza tipo Dov'è la mia astronave e perché si trova dentro casa tua"
 );
 function sendMessage($messaggio) {
-    $url = "https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provabruzzo3";
+    $url = "https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provabruzzo4";
     $url = $url . "&text=" . urlencode($messaggio);
     $ch = curl_init();
     $optArray = array(
@@ -612,14 +612,14 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
 }
-elseif(strtolower($text) == "/guerra3")
+elseif(strtolower($text) == "/guerra4")
 {
 			for($i = 0; $i < sizeof($battaglia); $i++)
 			{	
 			//$response = file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provahook2&text=".$battaglia[$i]);
 			sendMessage($battaglia[$i]);
 			set_time_limit(90000);
-			sleep(30);
+			sleep(600);
 			//usleep(200);
 			}
 	return;
