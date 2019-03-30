@@ -617,7 +617,8 @@ elseif(strtolower($text) == "/guerra")
 			{	
 			$response = file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@AbruzzoGuerra1980&text=".$battaglia[$i]);
 			//sendMessage($battaglia[$i]);
-			sleep(30);
+			//sleep(30);
+			usleep(200);
 			}	
 }
 elseif(strpos($text, "/sturla") === 0)
