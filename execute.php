@@ -52,9 +52,7 @@ elseif(strpos($text, "/postaggio") === 0)
     // output data of each row
 		while($row = $result->fetch_assoc()) {
 			$response = $row["messaggio"];
-			$parameters = array('chat_id' => $chatId, "text" => $response);
-			$parameters["method"] = "sendMessage";
-			echo json_encode($parameters);
+			header("Location: https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@AbruzzoGuerra1980&text=".$response."");
 			sleep(60);			
 		}
 } else {
