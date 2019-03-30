@@ -612,11 +612,11 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
 }
-elseif(strtolower($text) == "/guerra")
+elseif(strtolower($text) == "/guerra2")
 {
 			for($i = 0; $i < sizeof($battaglia); $i++)
 			{	
-			$response = file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provahook&text=".$battaglia[$i]);
+			$response = file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provahook2&text=".$battaglia[$i]);
 			//sendMessage($battaglia[$i]);
 			sleep(30);
 			//usleep(200);
