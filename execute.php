@@ -620,7 +620,7 @@ elseif(strtolower($text) == "/guerra6")
 			set_time_limit(90000);
 			sleep(60);
 			if (ob_get_length()) {
-			ob_end_flush();
+		//	ob_end_flush();
 			flush();
 			}
 			sendMessage($battaglia[$i]);
