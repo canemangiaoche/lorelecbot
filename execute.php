@@ -5,13 +5,13 @@ if(!$update)
 {
   exit;
 }
-$servername = "localhost";
-$username = "root";
-$password = "";
+$dservername = "localhost";
+$dusername = "root";
+$dpassword = "";
 $dbname = "my_simonetenisci";
 
 	// Create connection
-$link = new mysqli($servername, $username, $password, $dbname);
+$link = new mysqli($dservername, $dusername, $dpassword, $dbname);
 // Check connection
 if ($link->connect_error) {
     die("Connection failed: " . $link->connect_error);
