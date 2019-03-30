@@ -1,118 +1,21 @@
 <?php
-$aquila = array("Acciano", 
-"Aielli", 
-"Alfedena",
-"Anversa degli Abruzzi",
-"Ateleta",
-"Avezzano",
-"Balsorano",
-"Barete",
-"Barisciano",
-"Barrea",
-"Bisegna", 
-"Bugnara", 
-"Cagnano Amiterno", 
-"Calascio", 
-"Campo di Giove", 
-"Campotosto", 
-"Canistro", 
-"Cansano", 
-"Capestrano",
-"Capistrello", 
-"Capitignano", 
-"Caporciano", 
-"Cappadocia", 
-"Carapelle Calvisio", 
-"Carsoli", 
-"Castel del Monte", 
-"Castel di Ieri", 
-"Castel di Sangro", 
-"Castellafiume", 
-"Castelvecchio Calvisio", 
-"Castelvecchio Subequo", 
-"Celano", 
-"Cerchio", 
-"Civita d'Antino", 
-"Civitella Alfedena", 
-"Civitella Roveto", 
-"Cocullo", 
-"Collarmele", 
-"Collelongo", 
-"Collepietro", 
-"Corfinio", 
-"Fagnano Alto", 
-"Fontecchio", 
-"Fossa",
-"Gagliano Aterno", 
-"Gioia dei Marsi", 
-"Goriano Sicoli", 
-"Introdacqua", 
-"L'Aquila", 
-"Lecce nei Marsi", 
-"Luco dei Marsi", 
-"Lucoli", 
-"Magliano de' Marsi",
-"Massa d'Albe", 
-"Molina Aterno", 
-"Montereale", 
-"Morino",
-"Navelli", 
-"Ocre",
-"Ofena",
-"Opi", 
-"Oricola", 
-"Ortona dei Marsi", 
-"Ortucchio", 
-"Ovindoli", 
-"Pacentro", 
-"Pereto", 
-"Pescasseroli", 
-"Pescina", 
-"Pescocostanzo", 
-"Pettorano sul Gizio", 
-"Pizzoli",
-"Poggio Picenze",
-"Prata d'Ansidonia", 
-"Pratola Peligna", 
-"Prezza", 
-"Raiano", 
-"Rivisondoli", 
-"Rocca Pia", 
-"Rocca di Botte", 
-"Rocca di Cambio", 
-"Rocca di Mezzo", 
-"Roccacasale", 
-"Roccaraso", 
-"San Benedetto dei Marsi", 
-"San Benedetto in Perillis", 
-"San Demetrio ne' Vestini", 
-"San Pio delle Camere", 
-"San Vincenzo Valle Roveto", 
-"Sant'Eusanio Forconese", 
-"Sante Marie", 
-"Santo Stefano di Sessanio", 
-"Scanno", 
-"Scontrone", 
-"Scoppito", 
-"Scurcola Marsicana", 
-"Secinaro", 
-"Sulmona", 
-"Tagliacozzo", 
-"Tione degli Abruzzi", 
-"Tornimparte", 
-"Trasacco", 
-"Villa Sant'Angelo", 
-"Villa Santa Lucia degli Abruzzi", 
-"Villalago", 
-"Villavallelonga", 
-"Villetta Barrea", 
-"Vittorito");
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
 if(!$update)
 {
   exit;
 }
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "my_simonetenisci";
+
+	// Create connection
+$link = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($link->connect_error) {
+    die("Connection failed: " . $link->connect_error);
+} 
 //require(“send-sticker.php”);
 date_default_timezone_set('Europe/Rome');
 $giorno = date("H:i:s");
@@ -137,39 +40,25 @@ if(strpos($text, "/start") === 0)
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
 }
-elseif(strpos($text, "/guerra") === 0)
+elseif(strpos($text, "/postaggio") === 0)
 {
-	$response = "LA GUERRA HA INIZIO!";
+	$response = "POSTAGGIO IN CORSO";
 	$parameters = array('chat_id' => $chatId, "text" => $response);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
-	sleep(10);
-	for(;;)
-	{
-	if((sizeof($aquila)) > 1)
-	{
-		$w = $aquila[rand(0,sizeof($aquila)-1)];
-		$l = $aquila[rand(0,sizeof($aquila)-1)];
-		while ($w == $l)
-		{
-			$l = $aquila[rand(0,sizeof($aquila)-1)];
-			sleep(1);			
+	 $sql = "SELECT * from messaggi";
+	 $result = $link->query($sql);
+	 if ($result->num_rows > 0) {
+    // output data of each row
+		while($row = $result->fetch_assoc()) {
+			$response = $row["messaggio"];
+			$parameters = array('chat_id' => $chatId, "text" => $response);
+			$parameters["method"] = "sendMessage";
+			echo json_encode($parameters);
+			sleep(60);			
 		}
-		$parameters = array('chat_id' => $chatId, "text" => $response);
-		$response = "Il comune di $w ha sconfitto il comune di $l! ".sizeof($aquila)." comuni rimanenti.";
-		$parameters["method"] = "sendMessage";
-		echo json_encode($parameters);
-		$index = array_search($l, $aquila);
-		unset($aquila[$index]);
-		$aquila = array_values($aquila);		
-		sleep(60);
-	}
-	else {
-		$parameters = array('chat_id' => $chatId, "text" => $response);
-		$response = "Il comune di ".$aquila[0]." ha conquistato L'Abruzzo!";
-		$parameters["method"] = "sendMessage";
-		echo json_encode($parameters);
-		return;
-	}
+} else {
+    echo "0 risultati";
 }
+$link->close();	
 }
