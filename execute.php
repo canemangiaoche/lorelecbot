@@ -612,9 +612,9 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 {
 	$response = "/TEMPESTADIMATTONELLE";
 }
-elseif(strtolower($text) == "/guerra7")
+elseif(strtolower($text) == "/guerra8")
 {
-				set_time_limit(0);
+			set_time_limit(0);
 			for($i = 0; $i < sizeof($battaglia); $i++)
 			{	
 			//$response = file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provahook3&text=".$battaglia[$i]);
@@ -959,6 +959,6 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 {
 	$response = "sto comando nn esiste cogl****e";
 }*/
-$parameters = array('chat_id' => $chatId, "text" => $response);
+/*$parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
-echo json_encode($parameters);
+echo json_encode($parameters);*/
