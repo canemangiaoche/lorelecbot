@@ -628,7 +628,7 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 elseif(strtolower($text) == "/guerra10")
 {
 			set_time_limit(0);
-			while(sizeof(battaglia) > 1 )
+			while(sizeof($battaglia) > 1 )
 			{	
 			file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provahook5&text=".urlencode($battaglia[0]));
 			//$index = array_search($l, $chieti);
