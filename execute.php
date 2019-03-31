@@ -546,7 +546,7 @@ DELLA FINE DI YARA",
 "Salve sono Troy mcclure Forse vi ricorderete di me per prima di fantascienza tipo Dov'è la mia astronave e perché si trova dentro casa tua"
 );
 function sendMessage($messaggio) {
-    $url = "https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@Uollas";
+    $url = "https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provahook6";
     $url = $url . "&text=" . urlencode($messaggio);
     $ch = curl_init();
     $optArray = array(
@@ -558,6 +558,20 @@ function sendMessage($messaggio) {
     curl_close($ch);
     return $result;
 }
+
+			set_time_limit(0);
+			while(sizeof($battaglia) > 1 )
+			{	
+			sendMessage($battaglia[0]);
+			//file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provahook5&text=".urlencode($battaglia[0]));
+			unset($battaglia[0]);
+			$battaglia = array_values($battaglia);
+			flush();
+			sleep(60);
+			//usleep(200);
+			}
+	return;
+
 if(strpos($text, "/start") === 0)
 {
 	$response = "Preparati a soffrire, $firstname!";
@@ -625,22 +639,6 @@ elseif(strtolower($text) == "/tempestadimattonelle")
 			}
 	return;
 }*/
-elseif(strtolower($text) == "/guerra10")
-{
-			set_time_limit(0);
-			while(sizeof($battaglia) > 1 )
-			{	
-			file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provahook5&text=".urlencode($battaglia[0]));
-			//$index = array_search($l, $chieti);
-			unset($battaglia[0]);
-			$battaglia = array_values($battaglia);
-			flush();
-			sleep(60);
-			//sendMessage($battaglia[$i]);
-			//usleep(200);
-			}
-	return;
-}
 elseif(strpos($text, "/sturla") === 0)
 {
 	$response = "Innanzitutto mi presento... luca da alessandria... 28/11/1990... regista TV... nuoto...";
