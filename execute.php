@@ -617,7 +617,7 @@ elseif(strtolower($text) == "/guerra9")
 			set_time_limit(0);
 			for($i = 0; $i < sizeof($battaglia); $i++)
 			{	
-			file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provahook4&text=".$battaglia[$i]);
+			file_get_contents("https://api.telegram.org/bot587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0/sendMessage?chat_id=@provahook4&text=".urlencode($battaglia[$i]));
 			sleep(60);
 			flush();
 			//sendMessage($battaglia[$i]);
