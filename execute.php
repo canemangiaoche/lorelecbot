@@ -1,4 +1,5 @@
 <?php
+//include( dirname(__FILE__) . "/phpjobscheduler/firepjs.php");
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
 if(!$update)
@@ -558,7 +559,21 @@ function sendMessage($messaggio) {
     curl_close($ch);
     return $result;
 }
-			
+
+    $url = "https://www.simonetenisci.altervista.org/stampa.php";
+   // $url = $url . "&text=" . urlencode($messaggio);
+    $ch = curl_init();
+    $optArray = array(
+            CURLOPT_URL => $url,
+            CURLOPT_RETURNTRANSFER => true
+    );
+    curl_setopt_array($ch, $optArray);
+    $result = curl_exec($ch);
+    curl_close($ch);
+    return $result;
+}
+
+/*			
 			//set_time_limit(0);
 			a:
 			while(sizeof($battaglia) > 1 )
@@ -571,7 +586,7 @@ function sendMessage($messaggio) {
 				clearstatcache();
 				break;
 			}
-goto a;
+goto a;*/
 
 if(strpos($text, "/start") === 0)
 {
