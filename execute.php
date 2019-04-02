@@ -571,7 +571,6 @@ function sendMessage($messaggio) {
     $result = curl_exec($ch);
     curl_close($ch);
     return $result;
-}
 
 /*			
 			//set_time_limit(0);
