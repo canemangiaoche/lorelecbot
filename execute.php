@@ -6,7 +6,7 @@ if(!$update)
 {
   exit;
 }
-set_time_limit(90000);
+//set_time_limit(90000);
 //require(“send-sticker.php”);
 date_default_timezone_set('GMT');
 $giorno = date("H:i:s");
@@ -560,7 +560,7 @@ function sendMessage($messaggio) {
     return $result;
 }
 
-    $url = "https://www.simonetenisci.altervista.org/stampa.php";
+  /*  $url = "https://www.simonetenisci.altervista.org/stampa.php";
    // $url = $url . "&text=" . urlencode($messaggio);
     $ch = curl_init();
     $optArray = array(
@@ -570,7 +570,7 @@ function sendMessage($messaggio) {
     curl_setopt_array($ch, $optArray);
     $result = curl_exec($ch);
     curl_close($ch);
-    return $result;
+    return $result;*/
 
 /*			
 			//set_time_limit(0);
