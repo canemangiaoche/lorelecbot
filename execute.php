@@ -928,13 +928,12 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 {
 	$response = "sto comando nn esiste cogl****e";
 }*/
-
+$parameters = array('chat_id' => $chatId, "text" => $text);
 if($tastiera === true)
 {
 	$tastiera = false;
 	$keyboard = ['inline_keyboard' => [[['text' =>  'Clicca qui', 'callback_data' => 'myCallbackText']]]];
 	$parameters["reply_markup"] = json_encode($keyboard, true);
 }
-	$parameters = array('chat_id' => $chatId, "text" => $text);
 	$parameters["method"] = "sendMessage";
 	echo json_encode($parameters);
