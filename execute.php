@@ -647,7 +647,7 @@ elseif( strpos(strtolower($text), "/fusione") !== false )
 }
 elseif( strpos(strtolower($text), "/regala") === 0 )
 {
-	//$GLOBALS['a'] = true;
+	$GLOBALS['a'] = true;
 	$oggetto = ucfirst(substr($text, 8));  
 	$response = "Regalo $oggetto al primo che preme il bottone";
 }
@@ -937,8 +937,9 @@ if($GLOBALS['a'] == false)
 }
 else {
 	$GLOBALS['a'] = false;
+	$parameters = array('chat_id' => $chatId, "text" => $text);
 	$parameters["method"] = "sendMessage";
-	$keyboard = ['inline_keyboard' => [[['text' =>  'Sesso', 'callback_data' => 'myCallbackText']]]];
+	$keyboard = ['inline_keyboard' => [[['text' =>  'Clicca qui', 'callback_data' => 'myCallbackText']]]];
 	$parameters["reply_markup"] = json_encode($keyboard, true);
 	echo json_encode($parameters);
 }
