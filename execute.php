@@ -948,5 +948,5 @@ if($tastiera === true)
 }
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
-editMessageText($chatId, $messageId, "wo qualcuno ha vinto");
-echo json_encode($parameters);
+//editMessageText($chatId, $messageId, "wo qualcuno ha vinto");
+//echo json_encode($parameters);
