@@ -7,7 +7,7 @@ if(!$update)
 }
 //require(“send-sticker.php”);
 date_default_timezone_set('GMT');
-$GLOBALS['a'] = false;
+$tastiera = false;
 $giorno = date("H:i:s");
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
@@ -647,7 +647,7 @@ elseif( strpos(strtolower($text), "/fusione") !== false )
 }
 elseif( strpos(strtolower($text), "/regala") === 0 )
 {
-	$GLOBALS['a'] = true;
+	$tastiera = true;
 	$oggetto = ucfirst(substr($text, 8));  
 	$response = "Regalo $oggetto al primo che preme il bottone";
 }
@@ -929,17 +929,12 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	$response = "sto comando nn esiste cogl****e";
 }*/
 
-if($GLOBALS['a'] == false)
+if($tastiera === true)
 {
-	$parameters = array('chat_id' => $chatId, "text" => $response);
-	$parameters["method"] = "sendMessage";
-	echo json_encode($parameters);
-}
-else {
-	$GLOBALS['a'] = false;
-	$parameters = array('chat_id' => $chatId, "text" => $text);
-	$parameters["method"] = "sendMessage";
+	$tastiera = false;
 	$keyboard = ['inline_keyboard' => [[['text' =>  'Clicca qui', 'callback_data' => 'myCallbackText']]]];
 	$parameters["reply_markup"] = json_encode($keyboard, true);
-	echo json_encode($parameters);
 }
+	$parameters = array('chat_id' => $chatId, "text" => $text);
+	$parameters["method"] = "sendMessage";
+	echo json_encode($parameters);
