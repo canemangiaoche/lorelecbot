@@ -928,7 +928,7 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 {
 	$response = "sto comando nn esiste cogl****e";
 }*/
-$parameters = array('chat_id' => $chatId, "text" => $text);
+$parameters = array('chat_id' => $chatId, "text" => $response);
 if($tastiera === true)
 {
 	$tastiera = false;
