@@ -5,6 +5,12 @@ if(!$update)
 {
   exit;
 }
+ function editMessageText($chatId, $messageId, $message) {
+
+    $url = $GLOBALS[website]."/editMessageText?chat_id=".$chatId."&message_id=".$messageId."&text=".urlencode($message);
+    file_get_contents($url);
+
+}
 //require(“send-sticker.php”);
 date_default_timezone_set('GMT');
 $tastiera = false;
@@ -942,3 +948,4 @@ if($tastiera === true)
 }
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
+editMessageText($chatId, $messageId, "wo qualcuno ha vinto");
