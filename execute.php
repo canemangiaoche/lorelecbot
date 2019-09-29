@@ -647,7 +647,7 @@ elseif( strpos(strtolower($text), "/fusione") !== false )
 }
 elseif( strpos(strtolower($text), "/regala") === 0 )
 {
-	$GLOBALS['a'] = true;
+	//$GLOBALS['a'] = true;
 	$oggetto = ucfirst(substr($text, 8));  
 	$response = "Regalo $oggetto al primo che preme il bottone";
 }
