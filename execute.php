@@ -936,6 +936,7 @@ $parameters = array('chat_id' => $chatId, "text" => $response);
 if($tastiera === true)
 {
 	$tastiera = false;
+	$parameters = array('chat_id' => $chatId, "text" => $response, "reply_markup" => 'prova');
 	$keyboard = ['inline_keyboard' => [[['text' =>  'Clicca qui', 'callback_data' => 'provatesto']]]];
 	$parameters["reply_markup"] = json_encode($keyboard, true);
 }
