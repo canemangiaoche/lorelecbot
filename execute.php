@@ -645,7 +645,7 @@ elseif( strpos(strtolower($text), "/fusione") !== false )
    $response = "Sintassi: /fusione nome1/nome2";
 }
 }
-elseif( strpos(strtolower($text), "/regala") !== false )
+elseif( strpos(strtolower($text), "/regala") === 0 )
 {
 	$GLOBALS['a'] = true;
 	$oggetto = ucfirst(substr($text, 8));  
