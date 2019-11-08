@@ -47,7 +47,7 @@ $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
 $domanda = 'lorebot cosa ne pensi di';
-//$utente = new Utente($username, $chatId); //ERRORE???
+$mammt = new Utente($username, $chatId); //ERRORE???
 $lore = array(
 "STRONZO SONO UN NEGRO NINJA",
  "LA TIGRE DEL FAR WEB CHE GIOCA A NORELECBOT, POMPA LA LORE CHE C’È DORK QUARANTATRÈSEDICICICICI",
@@ -581,7 +581,7 @@ if(strpos($text, "/lore") === 0)
 }
 if(strpos($text, "/zonia") === 0)
 {
-	$response = $utente->creaUtente();
+	$response = $mammt->creaUtente();
 }
 if(strpos($text, "/autolavaggio") === 0)
 {
