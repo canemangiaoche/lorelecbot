@@ -1,4 +1,8 @@
 <?php
+
+require_once("utente.php");
+require_once("pianeta.php");
+
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
 if(!$update)
@@ -573,6 +577,10 @@ if(strpos($text, "/lore") === 0)
 {
 	$abc = array_rand($lore);
 	$response = $lore[rand(0,sizeof($lore)-1)];
+}
+if(strpos($text, "/zonia") === 0)
+{
+	$response = $utente->creaUtente();
 }
 if(strpos($text, "/autolavaggio") === 0)
 {
