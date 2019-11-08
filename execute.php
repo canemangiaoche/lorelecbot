@@ -11,6 +11,14 @@ if(!$update)
     file_get_contents($url);
 
 }
+
+function sendMessage($response) {
+    global $chatId;
+    $parameters = array('chat_id' => $chatId, "text" => $response);
+    $parameters["method"] = "sendMessage";
+    echo json_encode($parameters);
+}
+
 //require(“send-sticker.php”);
 date_default_timezone_set('GMT');
 $tastiera = false;
@@ -946,7 +954,6 @@ if($tastiera === true)
 	$keyboard = ['inline_keyboard' => [[['text' =>  'Clicca qui', 'callback_data' => 'provatesto']]]];
 	$parameters["reply_markup"] = json_encode($keyboard, true);
 }
-$parameters["method"] = "sendMessage";
-echo json_encode($parameters);
+sendMessage($response);
 //editMessageText($chatId, $messageId, "wo qualcuno ha vinto");
 //echo json_encode($parameters);
