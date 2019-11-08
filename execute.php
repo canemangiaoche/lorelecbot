@@ -1,7 +1,7 @@
 <?php
 
-require_once("utente.php");
-require_once("pianeta.php");
+include_once("utente.php");
+include_once("pianeta.php");
 
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
@@ -47,6 +47,7 @@ $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
 $domanda = 'lorebot cosa ne pensi di';
+$utente = new Utente($username, $chatId);
 $lore = array(
 "STRONZO SONO UN NEGRO NINJA",
  "LA TIGRE DEL FAR WEB CHE GIOCA A NORELECBOT, POMPA LA LORE CHE C’È DORK QUARANTATRÈSEDICICICICI",
