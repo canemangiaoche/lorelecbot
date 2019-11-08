@@ -1,7 +1,7 @@
 <?php
 
-include_once("utente.php");
-include_once("pianeta.php");
+require_once("utente.php");
+require_once("pianeta.php");
 
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
@@ -39,6 +39,7 @@ $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 $text = strtolower($text);
+//$mammt = new Utente($username, $chatId); //ERRORE???
 header("Content-Type: application/json");
 $response = '';
 $bot_token = '587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0';
@@ -47,7 +48,6 @@ $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
 $domanda = 'lorebot cosa ne pensi di';
-//$mammt = new Utente($username, $chatId); //ERRORE???
 $lore = array(
 "STRONZO SONO UN NEGRO NINJA",
  "LA TIGRE DEL FAR WEB CHE GIOCA A NORELECBOT, POMPA LA LORE CHE C’È DORK QUARANTATRÈSEDICICICICI",
