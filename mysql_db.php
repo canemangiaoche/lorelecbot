@@ -14,10 +14,10 @@
 class mysql_db {
     
   // mysql server configuration
-  private $dbhost = 'sql.web-developing.it';
-  private $dbuser = 'webdevel38223';
-  private $dbpass = 'webd83291';
-  private $dbname = 'webdevel38223';
+  private $dbhost = 'remotemysql.com:3306';
+  private $dbuser = 's2qm3Cv4Gz';
+  private $dbpass = 'pz5TzZ4oc8';
+  private $dbname = 's2qm3Cv4Gz';
   protected $mysql;
 
   public function getMysql() {
