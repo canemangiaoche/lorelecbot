@@ -39,7 +39,7 @@ $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 $text = strtolower($text);
-//$mammt = new Utente($username, $chatId); //ERRORE???
+$mammt = new Utente($username, $chatId); //ERRORE???
 header("Content-Type: application/json");
 $response = '';
 $bot_token = '587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0';
