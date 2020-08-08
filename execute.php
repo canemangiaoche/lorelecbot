@@ -668,7 +668,7 @@ elseif( strpos(strtolower($text), "/fusione") !== false )
    $response = "Sintassi: /fusione nome1/nome2";
 }
 }
-elseif( strpos(strtolower($text), "/regala") === 0 )
+/*elseif( strpos(strtolower($text), "/regala") === 0 )
 {
 	$oggetto = ucfirst(substr($text, 8)); 
 	if($oggetto == '')
@@ -677,7 +677,7 @@ elseif( strpos(strtolower($text), "/regala") === 0 )
 	}
 	$response = "Regalo $oggetto al primo che preme il bottone";
 	$tastiera = true;
-}
+}*/
 elseif( strpos(strtolower($text), $domanda) !== false && substr($text, -1) === '?')
 {
    $response = "Mi fa schifo al cazzo";
@@ -956,13 +956,13 @@ elseif( strpos(strtolower($text), $lorebot) !== false )
 	$response = "sto comando nn esiste cogl****e";
 }*/
 $parameters = array('chat_id' => $chatId, "text" => $response);
-if($tastiera === true)
+/*if($tastiera === true)
 {
 	$tastiera = false;
 	$parameters = array('chat_id' => $chatId, "text" => $response, "reply_markup" => 'prova');
 	$keyboard = ['inline_keyboard' => [[['text' =>  'Clicca qui', 'callback_data' => 'provatesto']]]];
 	$parameters["reply_markup"] = json_encode($keyboard, true);
-}
+}*/
 sendMessage($response);
 //editMessageText($chatId, $messageId, "wo qualcuno ha vinto");
-//echo json_encode($parameters);
+echo json_encode($parameters);
