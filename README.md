@@ -1,3 +1,3 @@
-# Telegram Echo Bot
+# Stocazzo
 
-This is a sample Telegram Bot written in PHP running on Heroku
+Suca
