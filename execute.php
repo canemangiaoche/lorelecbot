@@ -43,7 +43,7 @@ $text = strtolower($text);
 header("Content-Type: application/json");
 $response = '';
 $bot_token = '587912595:AAH2vcd1JzG1RuUK7X4h1k06L0VnMU7RUO0';
-$sticker_id = "CAADBAADZgEAApD3ZAYdxLS3pXN-cAI";
+$sticker_id = "CAACAgQAAxkBAAIHw18vzvY6YzFR_wqrSo7JUgw8lbM1AAJmAQACkPdkBh3EtLelc35wGgQ";
 $lorebot = 'lorebot';
 $attacca = 'lorebot attacca';
 $uccidi = 'lorebot uccidi';
