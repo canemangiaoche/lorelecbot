@@ -23,7 +23,7 @@ function sendMessage($response) {
     echo json_encode($parameters);
 }
 
-require(“send-sticker.php”);
+//require(“send-sticker.php”);
 date_default_timezone_set('GMT');
 $tastiera = false;
 $giorno = date("H:i:s");
